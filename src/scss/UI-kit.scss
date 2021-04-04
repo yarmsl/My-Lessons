@@ -102,6 +102,12 @@ body {
 
    & span {
       font-style: italic;
+      letter-spacing: -0.05em;
+   }
+
+   & b {
+      font-weight: 900;
+      letter-spacing: 0.05em;
    }
 
    & ul {

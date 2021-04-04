@@ -93,6 +93,12 @@ body {
 
 .theme span {
   font-style: italic;
+  letter-spacing: -0.05em;
+}
+
+.theme b {
+  font-weight: 900;
+  letter-spacing: 0.05em;
 }
 
 .theme ul {
