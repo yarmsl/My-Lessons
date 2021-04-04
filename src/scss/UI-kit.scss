@@ -107,13 +107,24 @@ body {
    & ul {
       padding: 10px 45px;
 
+
       & li {
          list-style-type: decimal;
+         border-radius: 5px;
+         transition: all 350ms ease-in-out;
 
          &:nth-child(2n) {
             background-color: $primeLight;
-            border-radius: 5px;
          }
+
+         &:hover {
+            transition: all 350ms ease-in-out;
+            background-color: $sec;
+            color: $tp;
+            cursor: pointer;
+         }
+
+
       }
    }
 }

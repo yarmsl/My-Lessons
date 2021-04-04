@@ -101,11 +101,23 @@ body {
 
 .theme ul li {
   list-style-type: decimal;
+  border-radius: 5px;
+  -webkit-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
 }
 
 .theme ul li:nth-child(2n) {
   background-color: #b2dfdb;
-  border-radius: 5px;
+}
+
+.theme ul li:hover {
+  -webkit-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+  background-color: #ff5722;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 @font-face {
