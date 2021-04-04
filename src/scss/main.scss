@@ -1,0 +1,10 @@
+.main {
+   width: 100%;
+   flex-grow: 1;
+
+   & section {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 10px 15px;
+   }
+}
