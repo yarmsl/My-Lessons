@@ -228,6 +228,7 @@ img {
 }
 
 .header__logo {
+  min-width: 40px;
   width: 40px;
   height: 40px;
   background: no-repeat center center url(../img/013-idea.svg);
