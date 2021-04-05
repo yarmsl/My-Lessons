@@ -23,6 +23,7 @@
 //          }    
 // }
 
+
 // if (personalMovieDB.count < 10) {
 //    console.log('Просмотрено очень мало фильмов');
 // } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
@@ -90,3 +91,41 @@
 //    }
 //    console.log(i);
 // }
+
+// Функции
+
+// let num = 20;
+
+// function showFirstMessage(text) {
+//    console.log(text);
+//    let num = 10;
+//    console.log(num);
+// }
+
+// showFirstMessage('JOPA!!!');
+// console.log(num);
+
+// function calc(a, b) {
+//    return (a + b);
+// }
+
+// console.log(calc(4,8));
+// console.log(calc(43,83));
+// console.log(calc(45,86));
+
+// function ret() {
+//    let num = 50;
+//    return num;
+// }
+
+// const logger = function() {
+//   console.log('hello'); 
+// };
+
+// logger();
+
+// const calc = (a, b) => {
+//    return (a + b);
+// };
+
+
