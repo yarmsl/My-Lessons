@@ -16,4 +16,12 @@
       align-items: center;
       text-align: center;
    }
+
+   &__logo {
+      width: 40px;
+      height: 40px;
+      background: no-repeat center center url(../img/013-idea.svg);
+      background-size: cover;
+      margin: 0 15px;
+   }
 }
