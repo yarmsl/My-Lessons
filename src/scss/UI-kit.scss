@@ -44,7 +44,7 @@ img {
    height: 100%;
    display: flex;
    flex-direction: column;
-   background-color: $light;
+
 
 }
 
@@ -54,6 +54,7 @@ img {
    font-style: normal;
    font-size: 1rem;
    color: $ts;
+
 
    & h1 {
       font-size: 2rem;
