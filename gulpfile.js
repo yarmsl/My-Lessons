@@ -25,7 +25,7 @@ let path = {
         img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}"
     },
     clean: "./" + project_folder + "/"
-}
+};
 
 let { src, dest } = require('gulp'),
     gulp = require('gulp'),
@@ -54,7 +54,7 @@ function browserSync(params) {
         port: 3000,
         notify: false
     })
-}
+};
 
 function html() {
     return src(path.src.html)
@@ -103,7 +103,7 @@ function js() {
             })
         )
         .pipe(dest(path.build.js))
-        .pipe(browsersync.stream())
+        .pipe(browsersync.stream());
 }
 
 function images() {
