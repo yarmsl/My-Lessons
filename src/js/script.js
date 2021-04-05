@@ -128,4 +128,16 @@
 //    return (a + b);
 // };
 
+// const arr = [
+//    {id: 1, car: 'Toyota', model: 'Auris', owner: 'Yaroslav'},
+//    {id: 2, car: 'Mitsubishi', model: 'Lancer', owner: 'Valeriya'},
+//    {id: 3, car: 'Nissan', model: 'Almera', owner: 'Yaroslav'},
+//    {id: 4, car: 'Volkswagen', model: 'Tiguan', owner: 'Yaroslav'}
+// ];
 
+// const list = arr.forEach(item => {
+//    console.log(item.car);
+// });
+
+// console.log(arr);
+// console.log(list);
