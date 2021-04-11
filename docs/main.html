@@ -72,5 +72,33 @@
 <section>
    <h2>Массивы и псевдомассивы</h2>
    <p>Метод перебора for (... of...) отличается от forEach, тем, что можно остановить или пропустить (break и continue)</p>
+   <h3>Объекты</h3>
+   <p>Создание объекта:
+      <code>let obj = new Object()</code>
+      <code>let obj = {}</code>
+   </p>
+   <h3>Массивы</h3>
+   <ul>
+      <li><code>arr.push()</code><span>Добавляет элемент в конец массива</span></li>
+      <li><code>arr.pop()</code><span>Удаляет последний элемент из массива и возвращает его</span></li>
+      <li><code>arr.shift()</code><span>Пдаляет из массива первый элемент и возвращет его</span></li>
+      <li><code>arr.unshift()</code><span>Побавляет элемент в начало массива</span></li>
+      <li><code>arr.split(s)</code><span>Превращает строку в массив, <b>s</b> - разделитель</span></li>
+      <li><code>arr.join(s)</code><span>Превращает массив в строку, <b>s</b> - разделитель</span></li>
+      <li><code>delete arr[1]</code><span>Удаляет второй элемент</span></li>
+      <li><code>arr.splice(index, count, elem1...)</code><span>Удалить <b>count</b> элементов, начиная с <b>index</b> и заменить на элементы <b>elem1...</b></span></li>
+      <li><code>arr.slice(begin, end)</code><span>Копировать часть массива с <b>begin</b> по <b>end</b> не включая</span></li>
+      <li><code>arr.sort(fn)</code><span>Сортирует масссив, если не передать функцию сравнения, сортирует элементы как строки</span></li>
+      <li><code>arr.reverse()</code><span>Меняет порядок элементов на обратный</span></li>
+      <li><code>arr.concat(item1...)</code><span>Создаёт новый массив, в который копируются элементы из <b>arr</b>, а также <b>item1...</b></span></li>
+   </ul>
+<h3>Методы перебора</h3>
+<ul>
+   <li><code>arr.forEach</code></li>
+   <li><code>arr.map</code></li>
+   <li><code>arr.every/some</code></li>
+   <li><code>arr.filter</code></li>
+   <li><code>arr.reduce</code></li>
+</ul>
 </section>
 </main>

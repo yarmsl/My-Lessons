@@ -106,6 +106,17 @@ img {
   letter-spacing: 0.05em;
 }
 
+.theme code {
+  color: #ffffff;
+  background-color: #004d40;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  font-weight: 300;
+  border-radius: 0.2rem;
+  opacity: .9;
+  display: block;
+}
+
 .theme ul {
   padding: 0.5rem 2.2rem;
 }

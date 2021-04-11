@@ -257,13 +257,20 @@
 
 // console.log(Object.keys(options).length);
 
-const arr = [1, 2, 3, 7, 9];
+// const arr = [13, 12, 3, 733, 9];
+
+// arr.sort(compareNum);
+// console.log(arr);
+
+// function compareNum(a, b) {
+//    return a - b;
+// }
 // arr[99] = 0;
 // console.log(arr.length);
 
-arr.forEach(function(item, i, arr) {
-   console.log(`${i}: ${item} внутри массива ${arr}`)
-});
+// arr.forEach(function(item, i, arr) {
+//    console.log(`${i}: ${item} внутри массива ${arr}`)
+// });
 
 // arr.pop();
 
@@ -280,3 +287,8 @@ arr.forEach(function(item, i, arr) {
 // for (let value of arr) {
 //    console.log(value);
 // }
+
+// const str = prompt('', '');
+// const products = str.split(', ');
+// products.sort();
+// console.log(products.join('; '));
