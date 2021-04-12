@@ -292,3 +292,85 @@
 // const products = str.split(', ');
 // products.sort();
 // console.log(products.join('; '));
+
+//Передача по ссылке или по значению
+
+// let a = 5,
+//    b = a;
+
+//    b = b + 5;
+
+//    console.log(b, a);
+
+// const obj = {
+//    a: 5,
+//    b: 1
+// };
+
+// const copy = obj; //передаётся ссылка на объект
+
+// copy.a = 10;
+// console.log(copy);
+// console.log(obj);
+
+// function copy(mainObj) {
+//    let objCopy = {};
+
+//    let key;
+//    for (key in mainObj) {
+//       objCopy[key] = mainObj[key];
+//    }
+//    return objCopy;
+// }
+
+// const numbers = {
+//    a: 2,
+//    b: 5,
+//    c: {
+//       x: 7,
+//       y: 4
+//    }
+// };
+
+// const newNumbers = copy(numbers);
+
+// newNumbers.c.x = 10;
+// console.log(numbers);
+// console.log(newNumbers);
+
+// const add = {
+//    d: 19,
+//    e: 22
+// };
+
+// const assign = Object.assign({}, add);
+// assign.d = 500;
+// console.log(add);
+// console.log(assign);
+
+// const oldArr = ['a', 'b', 'c'];
+// const newArr = oldArr.slice();
+
+// newArr[1] = 'dfdfgreg'
+// console.log(newArr);
+// console.log(oldArr);
+
+const video = ['youtube', 'vimeo', 'rutube'],
+      blogs = ['wordpress', 'LJ', 'blogger'],
+      internet = [...video, ...blogs, 'vk', 'Fb'];
+
+      console.log(internet);
+
+      function log(a, b, c) {
+         console.log(a);
+         console.log(b);
+         console.log(c);
+      }
+      const num = [2, 5, 7];
+
+      log(...num);
+
+const array = ['a', 'b'];
+
+const array2 = [...array];
+

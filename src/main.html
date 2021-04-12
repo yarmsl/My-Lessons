@@ -101,4 +101,15 @@
    <li><code>arr.reduce</code></li>
 </ul>
 </section>
+<section>
+   <h2>Передача по ссылке или по значению. Spread оператор</h2>
+   <p>При присваивании значений примитивных типов данных, они создают новые переменные, а при работе с Объектами создаются ссылки</p>
+   <span>Создаёт новый объект из arr и arr2, также можно создать новый объект, присоединив пустой объект (Поерхностная копия)</span> <code>Object.assign({}, arr)</code>
+   <code>Object.assign(arr, arr2);</code><span>Создаёт новый объект из arr и arr2, также можно создать новый объект, присоединив пустой объект</span> <code>Object.assign({}, arr)</code>
+   <span>Поверхностная копия массива</span>
+   <code>const newArr = oldArr.slice();</code>
+   <span>Поверхностная копия, используя Spread оператор, так же работает с объекатми (ES9)</span>
+   <code>const array = ['a', 'b'];</code>
+   <code>const array2 = [...array];</code>
+</section>
 </main>
