@@ -355,22 +355,52 @@
 // console.log(newArr);
 // console.log(oldArr);
 
-const video = ['youtube', 'vimeo', 'rutube'],
-      blogs = ['wordpress', 'LJ', 'blogger'],
-      internet = [...video, ...blogs, 'vk', 'Fb'];
+// const video = ['youtube', 'vimeo', 'rutube'],
+//       blogs = ['wordpress', 'LJ', 'blogger'],
+//       internet = [...video, ...blogs, 'vk', 'Fb'];
 
-      console.log(internet);
+//       console.log(internet);
 
-      function log(a, b, c) {
-         console.log(a);
-         console.log(b);
-         console.log(c);
-      }
-      const num = [2, 5, 7];
+//       function log(a, b, c) {
+//          console.log(a);
+//          console.log(b);
+//          console.log(c);
+//       }
+//       const num = [2, 5, 7];
 
-      log(...num);
+//       log(...num);
 
-const array = ['a', 'b'];
+// const array = ['a', 'b'];
 
-const array2 = [...array];
+// const array2 = [...array];
 
+// Основы ООП, прототипно-ориентированное наследование
+
+// let str = "some";
+
+// let strObj = new String(str);
+
+// console.log(typeof(str));
+// console.log(typeof(strObj));
+
+// console.dir([1,2,3]);
+
+// const soldier = {
+//       health: 400,
+//       armor: 100,
+//       sayHello: function() {
+//             console.log('Hi');
+//       }
+// };
+
+// const joe = {
+//       health: 100
+// };
+
+// joe.__proto__ = soldier;
+
+// const joe = Object.create(soldier);
+
+// Object.setPrototypeOf(joe, soldier);
+
+// joe.sayHello();

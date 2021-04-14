@@ -134,6 +134,31 @@
    <code>const array = ['a', 'b'];</code>
    <code>const array2 = [...array];</code>
 </section>
+<section>
+   <h2>Основы ООП, прототипно-ориентированное наследование</h2>
+   <p>Старый синтаксис:</p>
+   <span>joe наследует все свойстова soldier, которых у него нет</span>
+   <code><pre>const soldier = {
+      health: 400,
+      armor: 100,
+      sayHello: function() {
+            console.log('Hi');
+      }
+};
+
+const joe = {
+      health: 100
+};
+
+joe.__proto__ = soldier;</pre></code>
+<p>Новый синтаксис:</p>
+<code><pre>
+const joe = Object.create(soldier); <span>Создаёт объект, сразу привязанный к прототипу</span>
+
+Object.setPrototypeOf(joe, soldier); <span>Устанавливает связь</span>
+</pre>
+</code>
+</section>
 </main>
       <footer class="footer">
    <div class="footer__container">
