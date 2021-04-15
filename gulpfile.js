@@ -13,6 +13,7 @@ let path = {
     },
     src: {
         html: source_folder + "/*.html",
+        manifest: project_folder + "/",
         css: source_folder + "/scss/style.scss",
         js: source_folder + "/js/script.js",
         img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
@@ -24,7 +25,6 @@ let path = {
         js: source_folder + "/js/**/*.js",
         img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}"
     },
-    clean: "./" + project_folder + "/"
 };
 
 let { src, dest } = require('gulp'),
@@ -135,6 +135,7 @@ function fonts(params) {
         .pipe(ttf2woff2())
         .pipe(dest(path.build.fonts));
 }
+
 /* Отдельно запускаемые функции*/
 gulp.task('otf2ttf', function () {
     return src([source_folder + '/fonts/*.otf'])
@@ -142,7 +143,7 @@ gulp.task('otf2ttf', function () {
             formats: ['ttf']
         }))
         .pipe(dest(source_folder + '/fonts/'));
-})
+});
 
 gulp.task('svgSprite', function () {
     return gulp.src([source_folder + '/iconsprite/*.svg'])
@@ -156,7 +157,7 @@ gulp.task('svgSprite', function () {
         }
         ))
         .pipe(dest(path.build.img))
-})
+});
 /* Конец отдельно запускаемых функций */
 
 function fontsStyle(params) {
@@ -175,7 +176,7 @@ function fontsStyle(params) {
                     c_fontname = fontname;
                 }
             }
-        })
+        });
     }
 }
 
@@ -190,11 +191,9 @@ function watchFiles(params) {
     gulp.watch([path.watch.img], images);
 }
 
-function clean(params) {
-    return del(path.clean);
-}
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts), fontsStyle);
+
+let build = gulp.series( gulp.parallel(js, css, html, images, fonts), fontsStyle);
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.fontsStyle = fontsStyle;
