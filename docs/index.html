@@ -153,13 +153,33 @@ const joe = {
 joe.__proto__ = soldier;</pre></code>
 <p>Новый синтаксис:</p>
 <code><pre>
-const joe = Object.create(soldier); <span>Создаёт объект, сразу привязанный к прототипу</span>
+const joe = Object.create(soldier); <br> <span>Создаёт объект, сразу привязанный к прототипу</span>
 
-Object.setPrototypeOf(joe, soldier); <span>Устанавливает связь</span>
+Object.setPrototypeOf(joe, soldier);<br> <span>Устанавливает связь</span>
 </pre>
 </code>
 </section>
-
+<section>
+   <h2>Динамическая типизация</h2>
+   <h3>To String</h3>
+   <ul>
+      <li>String(var)</li>
+      <li>Конкатенация со строкой</li>
+   </ul>
+   <h3>To Number</h3>
+   <ul>
+      <li>Number('str')</li>
+      <li>Унарный плюс (+'str')</li>
+      <li>parseInt()</li>
+   </ul>
+   <h3>To boolean</h3>
+   <ul>
+      <li>false: 0, '', null, undefined, NaN;</li>
+      <li>true: всё остальное</li>
+      <li>Boolean(var)</li>
+      <li>!!var</li>
+   </ul>
+</section>
 </main>
       <footer class="footer">
    <div class="footer__container">

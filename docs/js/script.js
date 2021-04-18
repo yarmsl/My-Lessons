@@ -404,3 +404,14 @@
 // Object.setPrototypeOf(joe, soldier);
 
 // joe.sayHello();
+
+// Динамическая типизация
+
+// console.log([ ] + false - null + true); //NaN
+// console.log(typeof([ ] + false + null + true)); //String
+
+// let y = 1;
+// let x = y = 2;
+// console.log(x);
+
+// console.log("Ёжик" < "Яблоко");
