@@ -192,7 +192,14 @@ Object.setPrototypeOf(joe, soldier);<br> <span>Устанавливает свя
 </section>
 <section>
    <h2>Действия с элементами на странице</h2>
-   <h3>Новые методы</h3>
+   <p>Задать инлайн стиль элементу (наибольший вес)</p>
+   <code>el.style.camelCaseCssProp = "value"</code>
+   <code>el.style.cssText = 'css-prop: value; css-prop: value; ...'</code>
+   <p>Создать элемент</p>
+   <code>document.createElement("tag")</code>
+   <p>Добавить класс</p>
+   <code>el.classList.add('class')</code>
+   <h3>Новые методы позиционирования элементов</h3>
    <ul>
       <li><p>Добавить элемент в начало родителя</p><code>parent.prepend(el)</code></li>
       <li><p>Добавить элемент в конец родителя</p><code>parent.append(el)</code></li>
@@ -200,6 +207,18 @@ Object.setPrototypeOf(joe, soldier);<br> <span>Устанавливает свя
       <li><p>Добавить элемент после другого элемента</p><code></code>el_a.after(el)</li>
       <li><p>Заменить один элемент другим</p><code>el_a.replaceWith(el)</code></li>
       <li><p>Удалить элемент</p><code>el.remove()</code></li>
+   </ul>
+   <p>Вставляет HTML код в элемент</p>
+   <code>el.innerHTML = "html код"</code>
+   <p>Вставляет текст в элемент (безопасно)</p>
+   <code>el.textContent = 'text'</code>
+   <p>Вставляет HTML код на выбронную позицию относительно элемента</p>
+   <code>el.insertAdjacentHTML('beforeend/beforebegin/afterend/afterbegin', 'html код')</code>
+   <ul>
+      <li>afterbegin - в начале элемента</li>
+      <li>beforeend - в конце элемента</li>
+      <li>beforebegin - перед элементом</li>
+      <li>afterend - после элемента</li>
    </ul>
 </section>
 </main>
