@@ -158,4 +158,26 @@ Object.setPrototypeOf(joe, soldier);<br> <span>Устанавливает свя
       <li>!!var</li>
    </ul>
 </section>
+<section>
+   <h2>Получение элементов со страницы</h2>
+   <ul>
+      <li><p>Получаем 1 уникальный элемент</p><code>document.getElementById('id')</code></li>
+      <li><p>Получаем все элементы с данным html-тегом в html коллекцию</p><code>document.getElementsByTagName('tag')</code></li>
+      <li><p>Получаем все эелементы с данным css классом в html коллекцию</p><code>document.getElementsByClassName('class')</code></li>
+      <li><p>Получаем все эелементы с данным css селектором в node коллекцию <b>Доступен метод forEach</b></p><code>document.querySelectorAll('.class/#id/...')</code></li>
+      <li><p>Получаем первый элемент с заданным css селектором</p><code>document.querySelector('.class/#id/...')</code></li>
+   </ul>
+</section>
+<section>
+   <h2>Действия с элементами на странице</h2>
+   <h3>Новые методы</h3>
+   <ul>
+      <li><p>Добавить элемент в начало родителя</p><code>parent.prepend(el)</code></li>
+      <li><p>Добавить элемент в конец родителя</p><code>parent.append(el)</code></li>
+      <li><p>Добавить элемент перед другим элементом</p><code>el_a.before(el)</code></li>
+      <li><p>Добавить элемент после другого элемента</p><code></code>el_a.after(el)</li>
+      <li><p>Заменить один элемент другим</p><code>el_a.replaceWith(el)</code></li>
+      <li><p>Удалить элемент</p><code>el.remove()</code></li>
+   </ul>
+</section>
 </main>
