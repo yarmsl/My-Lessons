@@ -199,4 +199,44 @@ Object.setPrototypeOf(joe, soldier);<br> <span>Устанавливает свя
       <li>afterend - после элемента</li>
    </ul>
 </section>
+<section>
+   <h2>События</h2>
+   <a href="https://developer.mozilla.org/ru/docs/Web/API/EventTarget/addEventListener">addEventListener</a>
+   <h3>Способы использовать события:</h3>
+   <ul>
+      <li><p>Присваивать прямо в html коде (не используется в проектах)</p><code>...onclick="alert('Click')"</code></li>
+      <li><p>Обрабатывать событие в скрипте (не используется в проектах (обработчики 1го элемента могут пересекаться))</p><code>el.onclick = function() {alert('Click')}</code></li>
+      <li><p>Правильный способ - обрабатывать событие, используя/снимая прослушку</p><code>el.addEventListener('click'), function, {once: true} }</code></li>
+   </ul>
+   <p>Всплытие события происходит с самого дальнего ребёнка</p>
+</section>
+<section>
+   <h2>Прогулка по DOM дереву</h2>
+   <p>Элемент - некоторые узлы являются элементами (div, ... )</p>
+   <p>Узел - все сущности в дереве - узлы (переносы строк, текст)</p>
+   <h3>Способы получать элементы DOM</h3>
+   <p>структуры с Element и cheldren - получают именно элементы, остальные - все узлы</p>
+   <ul>
+      <li><p></p><code>document.documentElement</code></li>
+      <li><p></p><code>document.body.childNodes</code></li>
+      <li><p></p><code>document.body.children</code></li>
+      <li><p></p><code>document.body.firstChild</code></li>
+      <li><p></p><code>document.body.firstElementChild</code></li>
+      <li><p></p><code>document.body.lastChild</code></li>
+      <li><p></p><code>document.body.lastElementChild</code></li>
+      <li><p></p><code>document.querySelector('#current').parentNode</code></li>
+      <li><p></p><code>document.querySelector('#current').parentElement</code></li>
+      <li><p></p><code>document.querySelector('[data-current="3"]').nextElementSibling</code></li>
+      <li><p></p><code>document.querySelector('[data-current="3"]').nextSibling</code></li>
+      <li><p></p><code>document.querySelector('[data-current="3"]').previousSibling</code></li>
+      <li><p></p><code>document.querySelector('[data-current="3"]').previousElementSibling</code></li>
+   </ul>
+   <p>Пример использования <span>Перебрать html коллекцию и убрать из неё текстовые узлы</span></p>
+   <code>for (let node of document.body.childNodes) {
+      if (node.nodeName == "#text") {
+         continue;
+      }
+      console.log(node);
+   }</code>
+</section>
 </main>
