@@ -232,12 +232,12 @@ Object.setPrototypeOf(joe, soldier);<br> <span>Устанавливает свя
       <li><p></p><code>document.querySelector('[data-current="3"]').previousElementSibling</code></li>
    </ul>
    <p>Пример использования <span>Перебрать html коллекцию и убрать из неё текстовые узлы</span></p>
-   <code>for (let node of document.body.childNodes) {
+   <code><pre>for (let node of document.body.childNodes) {
       if (node.nodeName == "#text") {
          continue;
       }
       console.log(node);
-   }</code>
+   }</pre></code>
 </section>
 <section>
    <h2>События на мобильных устройствах</h2>
@@ -264,5 +264,41 @@ Object.setPrototypeOf(joe, soldier);<br> <span>Устанавливает свя
    <code>script async src="script.js"</script></code>
    <p>defer - такой скрипт можно подключать не только в конце, он дождется загрузки дом, потом сработает. если скриптов несколько, сработают в порядке очереди</p>
    <code>script defer src="script.js"</script></code>
+</section>
+<section>
+   <h2>ClassList</h2>
+   <a href='https://developer.mozilla.org/ru/docs/Web/API/Element/classList'>Element.classList</a>
+   <a href='https://developer.mozilla.org/ru/docs/Web/API/Element/matches'>Element.matches()</a>
+   <a href='https://learn.javascript.ru/event-delegation'>Делегирование событий</a>
+   <a href='https://stasonmars.ru/javascript/kak-rabotaet-delegirovanie-sobityi-v-javascript/'>Делегирование событий</a>
+<p>Делегирование позволяет использовать лишь одну прослушку, что экономит ресурсы, так же оно правильно отрабатывает с динамически созданными элементами, так как прослушивается их родитель. Пример:</p>
+<code><pre>
+   wrapper = document.querySelector('.btn-block');
+   wrapper.addEventListener('click', (e) => {
+      if (e.target && e.target.matches('button.red')) {
+         console.log('HELL!');
+      }
+   });
+</pre></code>
+</section>
+<section>
+   <h2>ES6 особенности</h2>
+   <ul>
+      <li>В объявлении функции можно задавать параметр по умолчанию: <code>function fName(param = 0) {}</code></code></li>
+   </ul>
+</section>
+<section>
+   <h2>setTimeout, setInterval</h2>
+   <p>рекурсивный вызов setTimeout отрабатывает лучше, чем setInterval (setInterval не ждёт после выполнения функции) Пример:</p>
+   <code><pre>let id = setTimeout(function log() {
+      console.log('recursion setTimeout');
+      id = setTimeout(log, 500);
+   }, 500);</pre></code>
+</section>
+<section>
+   <h2>Работа с датами</h2>
+   <a href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date'>Документация</a>
+   <a href='https://learn.javascript.ru/date'>Статья</a>
+   <p>Создание объекта с датой: <code>const date = new Date()</code><span>Создаётся текущая дата.</span> В скобки можно передать аргумент, допустим значение <code>input type="date"</code></p>
 </section>
 </main>
