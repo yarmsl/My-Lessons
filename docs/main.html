@@ -285,6 +285,7 @@ Object.setPrototypeOf(joe, soldier);<br> <span>Устанавливает свя
    <h2>ES6 особенности</h2>
    <ul>
       <li>В объявлении функции можно задавать параметр по умолчанию: <code>function fName(param = 0) {}</code></code></li>
+      <a href="https://alligator.io/js/object-property-shorthand-es6/">Сокращенная запись объектов</a>
    </ul>
 </section>
 <section>
@@ -294,11 +295,41 @@ Object.setPrototypeOf(joe, soldier);<br> <span>Устанавливает свя
       console.log('recursion setTimeout');
       id = setTimeout(log, 500);
    }, 500);</pre></code>
+   <p>Пример использования setInterval и clearInterval</p>
+   <code><pre>const timeInterval = setInterval(function, 1000);
+      if (smth) {
+         clearInterval(timeInterval);               
+      }
+   </pre></code>
 </section>
 <section>
    <h2>Работа с датами</h2>
    <a href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date'>Документация</a>
    <a href='https://learn.javascript.ru/date'>Статья</a>
    <p>Создание объекта с датой: <code>const date = new Date()</code><span>Создаётся текущая дата.</span> В скобки можно передать аргумент, допустим значение <code>input type="date"</code></p>
+</section>
+<section>
+   <h2>Параметры документа, окна и работа с ними</h2>
+   <img src="./img/metric-all.webp" />
+   <code>box-sizing: border-box;</code><span> Паддинги входят в длину/ширину элемента</span>
+   <h3>Метрика элементов</h3>
+   <ul>
+      <li>
+         <p>Получения значений js позиционирования</p>
+         <code>console.log(el.getBoundingClientRect().prop);</code>
+      </li>
+      <li>
+         <p>Получение уже просчитанных стилей</p>
+         <code><pre>
+            const style = window.getComputedStyle(el,{псевдокласс});
+            console.log(style.prop);
+         </pre></code>
+      </li>
+   </ul>
+   <h3>Метрика документа и окна</h3>
+   <p>Пример:</p>
+   <code>console.log(document.documentElement.scrollTop)</code>
+   <code>window.scrollBy(x, y)</code>
+   <code>window.scrollTo(x, y)</code>
 </section>
 </main>

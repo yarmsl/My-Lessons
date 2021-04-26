@@ -116,6 +116,10 @@ img {
       letter-spacing: 0.05em;
    }
 
+   & img {
+      box-shadow: 1px 1px 14px $primeDark;
+   }
+
    & code {
       color: $primeDark;
       text-shadow: 0 0 1px $primeDark;
