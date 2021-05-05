@@ -438,3 +438,88 @@
 
 // ivan.exit();
 // hector.hello();
+
+// function showThis(a, b) {
+//    console.log(this);
+//    function sum() {
+//       console.log(this);
+//       return a + b
+//    }
+//    console.log(sum());
+// }
+// showThis(9,45);
+
+// const obj = {
+//    a: 20,
+//    b: 15,
+//    sum: function() {
+//       function shout() {
+//          console.log(this);
+//       }
+//       shout()
+//    }
+// };
+// obj.sum();
+
+// function User(name, id) {
+//    this.name = name;
+//    this.id = id;
+//    this.human = true;
+//       this.hello = function() { 
+//       console.log(`hello ${this.name}`);
+//    };
+// }
+
+// const ivan = new User('Ivan', 22);
+
+// function sayName(surname) {
+//    console.log(this);
+//    console.log(this.name + surname);
+// }
+
+// const user = {
+//    name: 'John'
+// };
+
+// sayName.call(user, 'Constantine');
+// sayName.apply(user, ['Wick']);
+
+// function count(num) {
+//    return this*num;
+// }
+
+// const double = count.bind(2);
+
+// console.log(double(223));
+// console.log(double(22322));
+
+class Rectangle {
+   constructor(h, w) {
+      this.height = h;
+      this.width = w;
+   }
+   calcArea() {
+      return this.width * this.height;
+   }
+}
+
+class ColoredRectangleWithText extends Rectangle {
+   constructor (h, w, text, bgColor) {
+      super(h, w);
+      this.text = text;
+      this.bgColor = bgColor;
+   }
+   showMyProps() {
+      console.log(`Текст: ${this.text}, цвет: ${this.bgColor}`);
+   }
+}
+
+const square = new Rectangle(10, 50);
+
+const shape = new ColoredRectangleWithText(12, 20, 'Я сферка', '#000000');
+
+console.log(square.calcArea());
+
+shape.showMyProps();
+console.log(shape.calcArea());
+

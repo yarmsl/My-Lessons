@@ -357,7 +357,82 @@ Object.setPrototypeOf(joe, soldier);<br> <span>Устанавливает свя
 <section>
    <h2>Функции конструкторы</h2>
    <a href="https://learn.javascript.ru/constructor-new">Подробнее</a>
+</section>
+<section>
+   <h2>Контекст вызова. This</h2>
+   <a href='https://tproger.ru/translations/javascript-this-keyword/'>Подробнее</a>
+   <p>Особенности:</p>
+   <ul>
+      <li>Обычная функция: this = window, но если use strict - undefined</li>
+      <li>Контекст у методов объекта - сам объект</li>
+      <li>this в конструкторах и классах - это новый экземпляр объекта</li>
+      <li>Ручна привязка this: call, apply, bind</li>
+   </ul>
+   <p>Методы присвоения контекста -> функции, .call и .apply разлчаются синтаксисом передачи аргументов</p>
+   <code><pre>
+   function sayName(surname) {
+      console.log(this);
+      console.log(this.name + surname);
+   }
    
+   const user = {
+      name: 'John'
+   };
+   
+   sayName.<b>call</b>(user, 'Constantine');
+   sayName.<b>apply</b>(user, ['Wick']);
+</pre></code>
+<p>.bind создёт новую функцию</p>
+<code><pre>
+function count(num) {
+   return this*num;
+}
+
+const double = count<b>.bind(2)</b>;
+
+console.log(double(223));
+console.log(double(22322));
+</pre></code>
+</section>
+<section>
+   <h2>ES6 Классы</h2>
+   <a href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Classes'>Документация по классам</a>
+   <a href='http://jsraccoon.ru/es6-classes'>Статья по классам</a>
+   <p>Класс именуется с большой буквы, содержит <b>constructor</b>, в который передаются свойства. 
+      Если мы хотим переиспользовать класс в другом классе нужно указать <b>extends</b>, чтобы использовать 
+      свойства этого класса, в constructor нужно указать <b>super(props) - он идёт первым</b>
+   </p>
+   <code><pre>
+      class Rectangle {
+         <b>constructor</b>(h, w) {
+            this.height = h;
+            this.width = w;
+         }
+         calcArea() {
+            return this.width * this.height;
+         }
+      }
+      
+      class ColoredRectangleWithText <b>extends</b> Rectangle {
+         constructor (h, w, text, bgColor) {
+            <b>super</b>(h, w);
+            this.text = text;
+            this.bgColor = bgColor;
+         }
+         showMyProps() {
+            console.log(`Текст: ${this.text}, цвет: ${this.bgColor}`);
+         }
+      }
+      
+      const square = new Rectangle(10, 50);
+      
+      const shape = new ColoredRectangleWithText(12, 20, 'Я сферка', '#000000');
+      
+      console.log(square.calcArea());
+      
+      shape.showMyProps();
+      console.log(shape.calcArea());
+   </pre></code>
 </section>
 </main>
       <footer class="footer">
