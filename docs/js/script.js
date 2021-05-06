@@ -493,33 +493,44 @@
 // console.log(double(223));
 // console.log(double(22322));
 
-class Rectangle {
-   constructor(h, w) {
-      this.height = h;
-      this.width = w;
-   }
-   calcArea() {
-      return this.width * this.height;
-   }
+// class Rectangle {
+//    constructor(h, w) {
+//       this.height = h;
+//       this.width = w;
+//    }
+//    calcArea() {
+//       return this.width * this.height;
+//    }
+// }
+
+// class ColoredRectangleWithText extends Rectangle {
+//    constructor (h, w, text, bgColor) {
+//       super(h, w);
+//       this.text = text;
+//       this.bgColor = bgColor;
+//    }
+//    showMyProps() {
+//       console.log(`Текст: ${this.text}, цвет: ${this.bgColor}`);
+//    }
+// }
+
+// const square = new Rectangle(10, 50);
+
+// const shape = new ColoredRectangleWithText(12, 20, 'Я сферка', '#000000');
+
+// console.log(square.calcArea());
+
+// shape.showMyProps();
+// console.log(shape.calcArea());
+
+const log = function(a,b, ...rest) {
+   console.log(a, b, rest);
+};
+
+log('front', 'end', 3443, 'hook');
+
+function calcOrDouble(number, basis = 2) {
+   console.log(number * basis);
 }
 
-class ColoredRectangleWithText extends Rectangle {
-   constructor (h, w, text, bgColor) {
-      super(h, w);
-      this.text = text;
-      this.bgColor = bgColor;
-   }
-   showMyProps() {
-      console.log(`Текст: ${this.text}, цвет: ${this.bgColor}`);
-   }
-}
-
-const square = new Rectangle(10, 50);
-
-const shape = new ColoredRectangleWithText(12, 20, 'Я сферка', '#000000');
-
-console.log(square.calcArea());
-
-shape.showMyProps();
-console.log(shape.calcArea());
-
+calcOrDouble(4);

@@ -109,6 +109,7 @@ img {
 .theme img {
   -webkit-box-shadow: 1px 1px 14px #004d40;
           box-shadow: 1px 1px 14px #004d40;
+  width: 100%;
 }
 
 .theme code {

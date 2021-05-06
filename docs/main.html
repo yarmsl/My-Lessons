@@ -412,4 +412,21 @@ console.log(double(22322));
       console.log(shape.calcArea());
    </pre></code>
 </section>
+<section>
+   <h2>Rest оператор и параметры по умолчанию (ES6)</h2>
+   <a href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Rest_parameters'>Документация</a>
+   <a href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Default_parameters'>Параметры по умолчанию</a>
+   <p>Оператор ...rest <span>Называть можно как угодно</span></p>
+   <code><pre>
+      const log = function(a,b, <b>...rest</b>) {
+         console.log();
+      }
+   </pre></code>
+   <p>Значени по умолчанию можно передавать прямо в параметрах объявления функции</p>
+   <code><pre>
+      function calcOrDouble(number, basis <b>= 2</b>) {
+         console.log(number * basis);
+      }
+   </pre></code>
+</section>
 </main>
