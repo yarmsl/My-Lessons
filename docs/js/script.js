@@ -523,14 +523,26 @@
 // shape.showMyProps();
 // console.log(shape.calcArea());
 
-const log = function(a,b, ...rest) {
-   console.log(a, b, rest);
+// const log = function(a,b, ...rest) {
+//    console.log(a, b, rest);
+// };
+
+// log('front', 'end', 3443, 'hook');
+
+// function calcOrDouble(number, basis = 2) {
+//    console.log(number * basis);
+// }
+
+// calcOrDouble(4);
+
+const persone = {
+   name: 'Alex',
+   tel: '+43453453',
+   parents: {
+      mom: 'Olufta',
+      dad: 'Mikel'
+   }
 };
-
-log('front', 'end', 3443, 'hook');
-
-function calcOrDouble(number, basis = 2) {
-   console.log(number * basis);
-}
-
-calcOrDouble(4);
+console.log(persone);
+console.log(JSON.stringify(persone));
+const clone = JSON.parse(JSON.stringify(persone));
