@@ -582,11 +582,11 @@
 // });
 
 
-const test = time => {
-   return new Promise(resolve => {
-      setTimeout(() => resolve(), time*1000);
-   });
-};
+// const test = time => {
+//    return new Promise(resolve => {
+//       setTimeout(() => resolve(), time*1000);
+//    });
+// };
 
 // test(1).then(() => {
 //    console.log('1sec');
@@ -595,14 +595,59 @@ const test = time => {
 //    console.log('2sec');
 // });
 
-Promise.all([test(1), test(2)]).then(() => {
-   console.log('All');
-});
+// Promise.all([test(1), test(2)]).then(() => {
+//    console.log('All');
+// });
 
-Promise.race([test(1), test(2)]).then(() => {
-   console.log('All2');
-});
+// Promise.race([test(1), test(2)]).then(() => {
+//    console.log('All2');
+// });
 
+//Перебор массивов
 
+// const names = ['Alex', 'Alexa', 'Volan', 'Voldemort', 'Ass', 'Buka', 'Rubibden'];
 
+// const namesFiltered = names.filter((name) => {
+//    return name.length > 6;
+// });
 
+// console.log(namesFiltered);
+
+// let answers = ['PrtRo', 'AFFONya', 'Eblomet'];
+
+// answers = answers.map(item => item.toLowerCase());
+
+// console.log(answers);
+
+// const some = ['4', 'qwerty', 'hhu'];
+
+// console.log(some.some(item => typeof(item) === 'number'));
+// console.log(some.every(item => typeof(item) === 'string'));
+
+// const arr = [4, 3, 5, 1, 12, 6];
+
+// const res = arr.reduce((sum, current) => sum + current, 5);
+
+// console.log(res);
+
+// const arr = ['beer', 'vodka', 'wine'];
+
+// const res = arr.reduce((sum, current) => {
+//    return (`${sum}, ${current}`);
+// });
+
+// console.log(res);
+
+// const obj = {
+//    ivan: 'persone',
+//    ann: 'persone',
+//    dog: 'animal',
+//    cat: 'animal',
+//    shark: 'fish'
+// };
+
+// const newArr = Object.entries(obj)
+// .filter(item => item[1] === 'persone')
+// .map(item => item[0]);
+
+// console.log(newArr);
