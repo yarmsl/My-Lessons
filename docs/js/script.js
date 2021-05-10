@@ -535,14 +535,74 @@
 
 // calcOrDouble(4);
 
-const persone = {
-   name: 'Alex',
-   tel: '+43453453',
-   parents: {
-      mom: 'Olufta',
-      dad: 'Mikel'
-   }
+// const persone = {
+//    name: 'Alex',
+//    tel: '+43453453',
+//    parents: {
+//       mom: 'Olufta',
+//       dad: 'Mikel'
+//    }
+// };
+// console.log(persone);
+// console.log(JSON.stringify(persone));
+// const clone = JSON.parse(JSON.stringify(persone));
+
+// console.log('Запрос данных....');
+
+// const req = new Promise(function(resolve, reject) {
+//    setTimeout(() => {
+//       console.log('Подготовка данных....');
+
+//       const product = {
+//          name: 'TV',
+//          price: 3234,
+//       };
+      
+//       resolve(product);
+
+//    }, 2000);
+// });
+
+// req.then((product) => {
+//    return new Promise((resolve, reject) => {
+//       setTimeout(() => {
+//          product.status = 'order';
+//          resolve(product);
+//       }, 2000);
+//    }).then(data => {
+//       data.modify = true;
+//       return data;
+//    }).then(data => {
+//       console.log(data);
+//    }).catch(() => {
+//       console.error('произошла ошибка');
+//    }).finally(() => {
+//       console.log('finally');
+//    });
+// });
+
+
+const test = time => {
+   return new Promise(resolve => {
+      setTimeout(() => resolve(), time*1000);
+   });
 };
-console.log(persone);
-console.log(JSON.stringify(persone));
-const clone = JSON.parse(JSON.stringify(persone));
+
+// test(1).then(() => {
+//    console.log('1sec');
+// });
+// test(2).then(() => {
+//    console.log('2sec');
+// });
+
+Promise.all([test(1), test(2)]).then(() => {
+   console.log('All');
+});
+
+Promise.race([test(1), test(2)]).then(() => {
+   console.log('All2');
+});
+
+
+
+

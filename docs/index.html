@@ -476,6 +476,34 @@ console.log(double(22322));
    <p><a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B8_HTTP">Заголовки HTTP</a>
    <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BA%D0%BE%D0%B4%D0%BE%D0%B2_%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D1%8F_HTTP">Список кодов состояния HTTP</a></p>
 </section>
+<section>
+   <h2>
+      Promise ES6
+   </h2>
+   <a href="https://learn.javascript.ru/promise-basics">Подробнее</a>
+   <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise">Ещё</a>
+   <p><code>const req = new Promise((resolve, reject) => {async code})</code></p>
+   <ul>
+      <li><code>.then</code><p>Действия при положительном исходе</p></li>
+      <li><code>.catch</code><p>Действия при отрицательном</p></li>
+      <li><code>.finally</code><p>Действия при любом исходе (допустим очистка формы)</p></li>
+   </ul>
+   <p>Методы Promise</p>
+   <ul>
+      <li>
+         <p>All выполняет действие, когда все промисы завершены</p>
+         <code>Promise.all([func1, func2, ...]).then(() => {func})</code>
+      </li>
+      <li>
+         <p>Race выполняет действие, когда один из промисов (первый) завершён</p>
+         <code>Promise.race([func1, func2, ...]).then(() => {func})</code>
+      </li>
+   </ul>
+</section>
+<section>
+   <h2>Fetch API</h2>
+   <a href="https://developer.mozilla.org/ru/docs/Web/API/Fetch_API/Using_Fetch">Подробнее</a>
+</section>
 </main>
       <footer class="footer">
    <div class="footer__container">
