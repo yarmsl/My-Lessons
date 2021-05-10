@@ -51,16 +51,16 @@ function browserSync(params) {
         server: {
             baseDir: "./" + project_folder + "/"
         },
-        port: 3000,
+        port: 3500,
         notify: false
-    })
-};
+    });
+}
 
 function html() {
     return src(path.src.html)
         .pipe(fileinclude())
         .pipe(dest(path.build.html))
-        .pipe(browsersync.stream())
+        .pipe(browsersync.stream());
 }
 
 function css() {
@@ -87,7 +87,7 @@ function css() {
             })
         )
         .pipe(dest(path.build.css))
-        .pipe(browsersync.stream())
+        .pipe(browsersync.stream());
 }
 
 function js() {

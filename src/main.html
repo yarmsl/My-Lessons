@@ -481,6 +481,12 @@ console.log(double(22322));
 <section>
    <h2>Fetch API</h2>
    <a href="https://developer.mozilla.org/ru/docs/Web/API/Fetch_API/Using_Fetch">Подробнее</a>
+   <p>Отлавливание ошибок:</p>
+   <code><pre>
+      if (!result.ok) {
+         throw new Error(`Couldt fetch ${url}, status: ${result.status}`);
+      }
+   </pre></code>
 </section>
 <section>
    <h2>Методы перебора массивов</h2>
@@ -494,5 +500,29 @@ console.log(double(22322));
       let arr = [1, 6, 9, 2];
       arr.reduce((sum, current) => sum + current, [startValue])
    </pre></code>
+</section>
+<section>
+   <h2>npm пакеты</h2>
+   <p>Флаги:</p>
+   <ul>
+      <li>-g или --global - установить глобально</li>
+      <li>-D или --save--dev - пакет для разработки</li>
+   </ul>
+</section>
+<section>
+   <h2>Async/Await ES8</h2>
+   <p>Пример использования <span>в функции, которая использует асинхронный код (промисы) позволяет дождаться выполнения кода</span> :</p>
+<code><pre>      
+   const postData = <b>async</b> (url, data) => { // объявление асинхронной функции
+   const result = <b>await</b> fetch(url, { // дождаться, пока выполнится POST запрос
+      method: 'POST',
+      headers: {
+         'Content-type': 'application/json'
+      },
+      body: data
+   });
+   return <b>await</b> result.json(); // Дождаться пока ответ конвертируется в JS объект
+};
+</pre></code>
 </section>
 </main>
