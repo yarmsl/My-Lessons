@@ -651,3 +651,6 @@
 // .map(item => item[0]);
 
 // console.log(newArr);
+
+// localStorage.setItem('number', '556');
+// console.log(localStorage.getItem('number'));
