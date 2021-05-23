@@ -544,4 +544,40 @@ console.log(double(22322));
       </li>
    </ul>
 </section>
+<section>
+   <h2>Регулярные выражения</h2>
+   <a href="https://regex101.com/">Конструктор</a>
+   <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp">Документаия</a>
+   <a href="https://learn.javascript.ru/regular-expressions">Ещё</a>
+   <code>
+      const reg = /regular_expression/flags;
+      <p>flags:</p>
+      <ul>
+         <li>i - вне зависимости от регистра</li>
+         <li>g - все вхождения</li>
+         <li>m - многострочный режим</li>
+      </ul>
+   </code>
+   <p>Метод search игнорирует флаг g, а метод match возвращает массив</p>
+   <p>Пример:</p>
+   <ul>
+      <li>/./g - Точка - означает все символы, g - все вхождения</li>
+      <li>/\./g - \ - экранирование спецсимвола '.', g - все вхождения</li>
+   </ul>
+   <p>Классы:</p>
+   <ul>
+      <li>\d - все цифры</li>
+      <li>\w - все буквы</li>
+      <li>\s - все пробелы</li>
+   </ul>
+   <code>
+      const str = 'my name is R2D2';
+      console.log(str.match(/\w\d\w\d/i)); - R2D2
+   </code>
+   <p>Обратные классы:</p>
+   <ul>
+      <li>\D - все не цифры</li>
+      <li>\W - все не буквы</li>
+   </ul>
+</section>
 </main>

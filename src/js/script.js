@@ -654,3 +654,20 @@
 
 // localStorage.setItem('number', '556');
 // console.log(localStorage.getItem('number'));
+
+// new RegExp('pattern', 'flags');
+// /pattern/f
+
+// const pass = prompt('Enter your password');
+
+// console.log(pass.replace(/\./g, "*"));
+
+// console.log('12-34-56'.replace(/-/g, ':'));
+
+// const ans = prompt('enter digit'),
+// reg = /\d/ig;
+
+// console.log(reg.test(ans));
+
+const str = 'my name is R2D2';
+console.log(str.match(/\w\d\w\d/i));
