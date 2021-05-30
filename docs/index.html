@@ -235,7 +235,9 @@ Object.setPrototypeOf(joe, soldier);<br> <span>Устанавливает свя
    <ul>
       <li><p>Присваивать прямо в html коде (не используется в проектах)</p><code>...onclick="alert('Click')"</code></li>
       <li><p>Обрабатывать событие в скрипте (не используется в проектах (обработчики 1го элемента могут пересекаться))</p><code>el.onclick = function() {alert('Click')}</code></li>
-      <li><p>Правильный способ - обрабатывать событие, используя/снимая прослушку</p><code>el.addEventListener('click'), function, {once: true} }</code></li>
+      <li><p>Правильный способ - обрабатывать событие, используя/снимая прослушку</p><code>el.addEventListener('click'), function, {once: true} }</code><p>
+         Чтобы вызывать функцию с аргментом в прослушке, можно обернуть её в другую функцию( () => {func(props)})
+      </p></li>
    </ul>
    <p>Всплытие события происходит с самого дальнего ребёнка</p>
 </section>
@@ -698,6 +700,31 @@ console.log(double(22322));
       <li>import * as data from './path'</li>
       <li>export default function or var or class <p>Экспорт по-умолчанию (default) может быть только один</p></li>
       <li>import smth from './path'</li>
+   </ul>
+</section>
+<section>
+   <h2>Try...Catch. Ошибки. Как избежать “поломки” своего кода</h2>
+   <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/try...catch">try...catch</a>
+   <code><pre>
+      try {
+         console.log('ok');
+         console.log(tt); //ошибка
+         console.log('ok');
+      } catch(error) {
+         console.error(error.message);
+      } finally {
+      //выполняется в любом случае
+      }
+      console.log('script works ok'); //выполнится
+   </pre></code>
+</section>
+<section>
+   <h2>Как превратить код ES6+ в старый формат ES5. Babel, Core.js и полифиллы</h2>
+   <ul>
+      <li>Babel <a href="https://babeljs.io/">Подробнее</a></li>
+      <li>Проверка браузеров<a href="https://browserl.ist/">Подробнее</a></li>
+      <li>Core.js<a href="https://github.com/zloirock/core-js">github</a></li>
+      <li>ES6-Promise<a href="https://www.npmjs.com/package/es6-promise">npm</a></li>
    </ul>
 </section>
 </main>

@@ -718,3 +718,13 @@
 // Ivan.surname = 'ggt'
 // Ivan.say();
 
+// try {
+//    console.log('ok');
+//    console.log(tt); //ошибка
+//    console.log('ok');
+// } catch(error) {
+//    console.error(error.message);
+// } finally {
+// //выполняется в любом случае
+// }
+// console.log('script works ok'); //выполнится
