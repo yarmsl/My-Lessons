@@ -37,6 +37,12 @@
       <ul>
          <li>Function Declaration <p>Создаётся до начала выполнения скрипта, можно вызвать перед объявлением</p></li>
          <li>Function Expression <p>Создаётся только тогда, когда доходит поток кода, можно вызвать только после объявления</p></li>
+         <p>Анонимная, самовызывающаяся функция</p>
+         <code><pre>
+            (function() {
+
+            }());
+         </pre></code>
          <li>Стрелочные функции <p>Не имеют своего контекста (this)</p></li>
       </ul>
    </p>
@@ -344,7 +350,7 @@ Object.setPrototypeOf(joe, soldier);<br> <span>Устанавливает свя
       <li>Обычная функция: this = window, но если use strict - undefined</li>
       <li>Контекст у методов объекта - сам объект</li>
       <li>this в конструкторах и классах - это новый экземпляр объекта</li>
-      <li>Ручна привязка this: call, apply, bind</li>
+      <li>Ручная привязка this: call, apply, bind</li>
    </ul>
    <p>Методы присвоения контекста -> функции, .call и .apply разлчаются синтаксисом передачи аргументов</p>
    <code><pre>
@@ -578,6 +584,97 @@ console.log(double(22322));
    <ul>
       <li>\D - все не цифры</li>
       <li>\W - все не буквы</li>
+   </ul>
+</section>
+<section>
+   <h2>Геттеры и сеттеры (свойства объектов)</h2>
+   <a href="https://learn.javascript.ru/property-accessors">Подробнее</a>
+   <code>
+      <pre>
+         const persone = {
+            name: 'Ivan',
+            age: 30,
+         
+            get userAge() {
+               return this.age;
+            },
+         
+            set userAge(num) {
+               this.age = num;
+            }
+         };
+
+         console.log(persone.userAge = 819); //819
+         console.log(persone.userAge); //819
+         console.log(persone.age); //819
+      </pre>
+   </code>
+</section>
+<section>
+   <h2>Инкапсуляция</h2>
+   <a href="http://www.codenet.ru/progr/cpp/ipn.php">Инкапсуляция, полиморфизм, наследование</a>
+   <a href="https://medium.com/devschacht/javascripts-new-private-class-fields-c60daffe361b">Новые #приватные поля классов в JavaScript</a>
+   <p>Для защиты данных (переменных и пр.) извне в функциях достаточно использовать объявление переменной внутри её самой. В классах можно использовать синтаксис #variable = 'smth', такие переменные заданные через решетку лишены доступа извне. Для изменения вышеописанных переменных в функциях и классах используют геттеры и сеттеры (get, set). Также по договоренности в классах переменные, которые нельзя трогать извне (только гет и сет) называют через лодаш (this._var), но это лишь для зрительного восприятия.</p>
+   <p>Пример</p>
+   <code><pre>
+      class User {
+         constructor(name, age) {
+            this.name = name;
+            this._age = age;
+         }
+      
+         #surname = 'Durak';
+   
+         say = () => {
+            console.log(`Имя: ${this.name} ${this.#surname}, возраст: ${this._age}`);
+         }
+         get age() {
+            return this._age;
+         }
+         set age(age) {
+            if (typeof(age) === 'number' && age > 18 && age < 99) {
+               this._age = age;
+            } else {
+               console.error('Недопустимое значение возраста');
+            }
+         }
+      }
+      const Ivan = new User('Ivan' , 33);
+      Ivan.surname = 'ggt'
+      Ivan.say(); //Имя: Ivan Durak, возраст: 33
+   </pre></code>
+</section>
+<section>
+   <h2>Паттерны программирования и проектирования</h2>
+   <ul>
+      <li><a href="https://habr.com/ru/company/ruvds/blog/419997/">Модуль</a></li>
+      <li><a href="https://refactoring.guru/ru/design-patterns/facade">Фасад</a></li>
+   </ul>
+</section>
+<section>
+   <h2>Webpack. Собираем наш проект</h2>
+   <ul>
+      <li>Модули CommonJS <a href="http://largescalejs.ru/commonjs-modules/">Подробнее</a>
+         <p>В экспортном js файле: <code>module.exports = myFunction;</code></p>
+         <p>В файле, где экспортируем: <code>const myModule = require('./pathToExportFile');</code></p>
+
+      </li>
+      <li>Установка Webpack <a href="https://webpack.js.org/guides/getting-started/">Подробнее</a></li>
+      <li>Визуальная инструкция <a href="https://webpack.js.org/">Подробнее</a></li>
+      <li>Режимы работы webpack <a href="https://webpack.js.org/configuration/mode/">Подробнее</a></li>
+      <li>Виды Dvtool <a href="https://webpack.js.org/configuration/devtool/">Подробнее</a></li>
+      <li>Модули Webpack <a href="https://webpack.js.org/concepts/modules/">Подробнее</a></li>
+   </ul>
+</section>
+<section>
+   <h2>ES6 Modules</h2>
+   <ul>
+      <li>export function or var or class</li>
+      <li>export default function or var or class</li>
+      <li>import {smth as newName} from './path'</li>
+      <li>import * as data from './path'</li>
+      <li>export default function or var or class <p>Экспорт по-умолчанию (default) может быть только один</p></li>
+      <li>import smth from './path'</li>
    </ul>
 </section>
 </main>

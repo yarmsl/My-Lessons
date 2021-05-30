@@ -669,5 +669,52 @@
 
 // console.log(reg.test(ans));
 
-const str = 'my name is R2D2';
-console.log(str.match(/\w\d\w\d/i));
+// const str = 'my name is R2D2';
+// console.log(str.match(/\w\d\w\d/i));
+
+// const persone = {
+//    name: 'Ivan',
+//    age: 30,
+
+//    get userAge() {
+//       return this.age;
+//    },
+
+//    set userAge(num) {
+//       this.age = num;
+//    }
+// };
+
+// console.log(persone.userAge = 819); //819
+// console.log(persone.userAge); //819
+// console.log(persone.age); //819
+
+// class User {
+//    constructor(name, age) {
+//       this.name = name;
+//       this._age = age;
+//    }
+
+//    #surname = 'Durak';
+
+//    say = () => {
+//       console.log(`Имя: ${this.name} ${this.#surname}, возраст: ${this._age}`);
+//    }
+
+//    get age() {
+//       return this._age;
+//    }
+
+//    set age(age) {
+//       if (typeof(age) === 'number' && age > 18 && age < 99) {
+//          this._age = age;
+//       } else {
+//          console.error('Недопустимое значение возраста');
+//       }
+//    }
+// }
+
+// const Ivan = new User('Ivan' , 33);
+// Ivan.surname = 'ggt'
+// Ivan.say();
+
