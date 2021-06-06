@@ -23,129 +23,157 @@
 </header>
       <main class="main">
 
-<section>
-   <h2>GIT</h2>
-   <p>мощная и сложная распределенная система контроля версий.</p>
-   <a href="https://githowto.com/ru">Git How To</a>
-<ul>
-   <li>git init - Начало работы, инициализация репозитория</li>
-   <li>git config - Создание конфигруации (--global user.name "Yaroslav"; --local user.email "*@m.d")</li>
-   <li>git status - Проверка статуса файлов</li>
-   <li>git add - Добавление файлов (-A - всех)</li>
-   <li>git commit -a -m"Сообщение"</li>
-   <li>git remote add origin url</li>
-   <li>git branch -M main - Назначение главной ветки</li>
-   <li>git push -u origin main</li>
-   <li>git clone url /folder - Скачать репозиторий в папку</li>
-   <li>git pull - Получить файлы с удалённого репозитория</li>
-</ul>
-</section>
-<section>
-   <h2>Консольное приложение</h2>
-   <ul>
-      <li>alert(title) -  показывает сообщение и ждёт, пока пользователь нажмёт кнопку «ОК».</li>
-      <li>prompt(title,[default]) показывает сообщение и запрашивает ввод текста от пользователя. Возвращает напечатанный в поле ввода текст или null, если была нажата кнопка «Отмена» или Esc с клавиатуры.</li>
-      <li>confirm(question) показывает сообщение и ждёт, пока пользователь нажмёт OK или Отмена. Возвращает true, если нажата OK, и false, если нажата кнопка «Отмена» или Esc с клавиатуры.</li>
-   </ul>
-   <p>запись ключа объекта, если мы задаем его кириллицей и пр. через <b>квадратные скобки</b> вместо <span>точки</span> работает корректенее</p>
-</section>
-<section>
-   <h2>Циклы</h2>
-   <a href="https://learn.javascript.ru/while-for">Циклы while и for</a>
-</section>
-<section>
-   <h2>Функции</h2>
-   <p>Подробнее про <a href="https://medium.com/nuances-of-programming/%D1%8F-%D0%BD%D0%B8%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0-%D0%BD%D0%B5-%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%BB-%D0%B7%D0%B0%D0%BC%D1%8B%D0%BA%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B2-javascript-%D1%87%D0%B0%D1%81%D1%82%D1%8C-%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F-3c3f02041970">замыкания</a> и <a href="https://learn.javascript.ru/closures">ещё о них</a></p>
-   <p>Функции бывают:
+   <section>
+      <h2>GIT</h2>
+      <p>мощная и сложная распределенная система контроля версий.</p>
+      <a href="https://githowto.com/ru">Git How To</a>
       <ul>
-         <li>Function Declaration <p>Создаётся до начала выполнения скрипта, можно вызвать перед объявлением</p></li>
-         <li>Function Expression <p>Создаётся только тогда, когда доходит поток кода, можно вызвать только после объявления</p></li>
+         <li>git init - Начало работы, инициализация репозитория</li>
+         <li>git config - Создание конфигруации (--global user.name "Yaroslav"; --local user.email "*@m.d")</li>
+         <li>git status - Проверка статуса файлов</li>
+         <li>git add - Добавление файлов (-A - всех)</li>
+         <li>git commit -a -m"Сообщение"</li>
+         <li>git remote add origin url</li>
+         <li>git branch -M main - Назначение главной ветки</li>
+         <li>git push -u origin main</li>
+         <li>git clone url /folder - Скачать репозиторий в папку</li>
+         <li>git pull - Получить файлы с удалённого репозитория</li>
+      </ul>
+   </section>
+   <section>
+      <h2>Консольное приложение</h2>
+      <ul>
+         <li>alert(title) - показывает сообщение и ждёт, пока пользователь нажмёт кнопку «ОК».</li>
+         <li>prompt(title,[default]) показывает сообщение и запрашивает ввод текста от пользователя. Возвращает
+            напечатанный в поле ввода текст или null, если была нажата кнопка «Отмена» или Esc с клавиатуры.</li>
+         <li>confirm(question) показывает сообщение и ждёт, пока пользователь нажмёт OK или Отмена. Возвращает true,
+            если нажата OK, и false, если нажата кнопка «Отмена» или Esc с клавиатуры.</li>
+      </ul>
+      <p>запись ключа объекта, если мы задаем его кириллицей и пр. через <b>квадратные скобки</b> вместо
+         <span>точки</span> работает корректенее
+      </p>
+   </section>
+   <section>
+      <h2>Циклы</h2>
+      <a href="https://learn.javascript.ru/while-for">Циклы while и for</a>
+   </section>
+   <section>
+      <h2>Функции</h2>
+      <p>Подробнее про <a
+            href="https://medium.com/nuances-of-programming/%D1%8F-%D0%BD%D0%B8%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0-%D0%BD%D0%B5-%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%BB-%D0%B7%D0%B0%D0%BC%D1%8B%D0%BA%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B2-javascript-%D1%87%D0%B0%D1%81%D1%82%D1%8C-%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F-3c3f02041970">замыкания</a>
+         и <a href="https://learn.javascript.ru/closures">ещё о них</a></p>
+      <p>Функции бывают:
+      <ul>
+         <li>Function Declaration <p>Создаётся до начала выполнения скрипта, можно вызвать перед объявлением</p>
+         </li>
+         <li>Function Expression <p>Создаётся только тогда, когда доходит поток кода, можно вызвать только после
+               объявления</p>
+         </li>
          <p>Анонимная, самовызывающаяся функция</p>
          <code><pre>
             (function() {
 
             }());
          </pre></code>
-         <li>Стрелочные функции <p>Не имеют своего контекста (this)</p></li>
+         <li>Стрелочные функции <p>Не имеют своего контекста (this)</p>
+         </li>
       </ul>
-   </p>
-</section>
-<section>
-   <h2>Методы строк и чисел</h2>
-   <h3>Строк:</h3>
-   <ul>
-      <li>.indexOf('') <p>ищет подстроку в строке, при её отсутствии <b>возварщает -1, если находит, возварщает индекс, с которого начинается подстрока</b></p></li>
-      <li>.slice(-2, )<p>возваращет подстроку из стоки с ... по ... заданный индекс, принимает <b>отрицательные значения </b><span>(тогда отсчёт идёт с конца)</span></p></li>
-      <li>.substring(2,4)<p>возваращет подстроку из стоки с ... по ... заданный индекс</p></li>
-      <li>.substr(2,2)<p>возваращет подстроку из стоки с ... длиной в ...</p></li>
-   </ul>
-   <h3>Чисел:</h3>
-   <ul>
-      <li>Math.round(var) <p>Округление до целых</p></li>
-      <li>parseInt(var)<p>Может округлить до целого и убрать единицы измерения</p></li>
-      <li>parseFloat(var)<p>Может убрать единицы измерения и оставить плавающую запятую</p></li>
-   </ul>
-</section>
-<section>
-   <h2>Колбэк функции</h2>
-   <a href="https://learn.javascript.ru/callbacks">Адская пирамида колбэков</a>
-</section>
-<section>
-   <h2>Объекты, деструктуризация объектов</h2>
-   <p>оператор delete object.[] удаляет ключ - значение</p>
-   <p>деструктуризация const = {key2, key2} = object.key1 <a href="https://learn.javascript.ru/destructuring#destrukturizatsiya-obekta">Подробнее</a></p>
-   <p>перебор for (key in object ) { } <a href='https://learn.javascript.ru/object-for-in'>Подробнее</a></p>
-   <p>метод Object.keys(object) создаёт массив с ключами первого уровня объекта</p>
-   <p><a href="https://learn.javascript.ru/descriptors-getters-setters">get/set</a></p>
-</section>
-<section>
-   <h2>Массивы и псевдомассивы</h2>
-   <p>Метод перебора for (... of...) отличается от forEach, тем, что можно остановить или пропустить (break и continue)</p>
-   <h3>Объекты</h3>
-   <p>Создание объекта:
-      <code>let obj = new Object()</code>
-      <code>let obj = {}</code>
-   </p>
-   <h3>Массивы</h3>
-   <ul>
-      <li><code>arr.push()</code><span>Добавляет элемент в конец массива</span></li>
-      <li><code>arr.pop()</code><span>Удаляет последний элемент из массива и возвращает его</span></li>
-      <li><code>arr.shift()</code><span>Удаляет из массива первый элемент и возвращет его</span></li>
-      <li><code>arr.unshift()</code><span>Добавляет элемент в начало массива</span></li>
-      <li><code>arr.split(s)</code><span>Превращает строку в массив, <b>s</b> - разделитель</span></li>
-      <li><code>arr.join(s)</code><span>Превращает массив в строку, <b>s</b> - разделитель</span></li>
-      <li><code>delete arr[1]</code><span>Удаляет второй элемент</span></li>
-      <li><code>arr.splice(index, count, elem1...)</code><span>Удалить <b>count</b> элементов, начиная с <b>index</b> и заменить на элементы <b>elem1...</b></span></li>
-      <li><code>arr.slice(begin, end)</code><span>Копировать часть массива с <b>begin</b> по <b>end</b> не включая</span></li>
-      <li><code>arr.sort(fn)</code><span>Сортирует масссив, если не передать функцию сравнения, сортирует элементы как строки</span></li>
-      <li><code>arr.reverse()</code><span>Меняет порядок элементов на обратный</span></li>
-      <li><code>arr.concat(item1...)</code><span>Создаёт новый массив, в который копируются элементы из <b>arr</b>, а также <b>item1...</b></span></li>
-   </ul>
-<h3>Методы перебора</h3>
-<ul>
-   <li><code>arr.forEach</code></li>
-   <li><code>arr.map</code></li>
-   <li><code>arr.every/some</code></li>
-   <li><code>arr.filter</code></li>
-   <li><code>arr.reduce</code></li>
-</ul>
-</section>
-<section>
-   <h2>Передача по ссылке или по значению. Spread оператор</h2>
-   <p>При присваивании значений примитивных типов данных, они создают новые переменные, а при работе с Объектами создаются ссылки</p>
-   <span>Создаёт новый объект из arr и arr2, также можно создать новый объект, присоединив пустой объект (Поерхностная копия)</span> <code>Object.assign({}, arr)</code>
-   <code>Object.assign(arr, arr2);</code><span>Создаёт новый объект из arr и arr2, также можно создать новый объект, присоединив пустой объект</span> <code>Object.assign({}, arr)</code>
-   <span>Поверхностная копия массива</span>
-   <code>const newArr = oldArr.slice();</code>
-   <span>Поверхностная копия, используя Spread оператор, так же работает с объекатми (ES9)</span>
-   <code>const array = ['a', 'b'];</code>
-   <code>const array2 = [...array];</code>
-</section>
-<section>
-   <h2>Основы ООП, прототипно-ориентированное наследование</h2>
-   <p>Старый синтаксис:</p>
-   <span>joe наследует все свойстова soldier, которых у него нет</span>
-   <code><pre>const soldier = {
+      </p>
+   </section>
+   <section>
+      <h2>Методы строк и чисел</h2>
+      <h3>Строк:</h3>
+      <ul>
+         <li>.indexOf('') <p>ищет подстроку в строке, при её отсутствии <b>возварщает -1, если находит, возварщает
+                  индекс, с которого начинается подстрока</b></p>
+         </li>
+         <li>.slice(-2, )<p>возваращет подстроку из стоки с ... по ... заданный индекс, принимает <b>отрицательные
+                  значения </b><span>(тогда отсчёт идёт с конца)</span></p>
+         </li>
+         <li>.substring(2,4)<p>возваращет подстроку из стоки с ... по ... заданный индекс</p>
+         </li>
+         <li>.substr(2,2)<p>возваращет подстроку из стоки с ... длиной в ...</p>
+         </li>
+      </ul>
+      <h3>Чисел:</h3>
+      <ul>
+         <li>Math.round(var) <p>Округление до целых</p>
+         </li>
+         <li>parseInt(var)<p>Может округлить до целого и убрать единицы измерения</p>
+         </li>
+         <li>parseFloat(var)<p>Может убрать единицы измерения и оставить плавающую запятую</p>
+         </li>
+      </ul>
+   </section>
+   <section>
+      <h2>Колбэк функции</h2>
+      <a href="https://learn.javascript.ru/callbacks">Адская пирамида колбэков</a>
+   </section>
+   <section>
+      <h2>Объекты, деструктуризация объектов</h2>
+      <p>оператор delete object.[] удаляет ключ - значение</p>
+      <p>деструктуризация const = {key2, key2} = object.key1 <a
+            href="https://learn.javascript.ru/destructuring#destrukturizatsiya-obekta">Подробнее</a></p>
+      <p>перебор for (key in object ) { } <a href='https://learn.javascript.ru/object-for-in'>Подробнее</a></p>
+      <p>метод Object.keys(object) создаёт массив с ключами первого уровня объекта</p>
+      <p><a href="https://learn.javascript.ru/descriptors-getters-setters">get/set</a></p>
+   </section>
+   <section>
+      <h2>Массивы и псевдомассивы</h2>
+      <p>Метод перебора for (... of...) отличается от forEach, тем, что можно остановить или пропустить (break и
+         continue)</p>
+      <h3>Объекты</h3>
+      <p>Создание объекта:
+         <code>let obj = new Object()</code>
+         <code>let obj = {}</code>
+      </p>
+      <h3>Массивы</h3>
+      <ul>
+         <li><code>arr.push()</code><span>Добавляет элемент в конец массива</span></li>
+         <li><code>arr.pop()</code><span>Удаляет последний элемент из массива и возвращает его</span></li>
+         <li><code>arr.shift()</code><span>Удаляет из массива первый элемент и возвращет его</span></li>
+         <li><code>arr.unshift()</code><span>Добавляет элемент в начало массива</span></li>
+         <li><code>arr.split(s)</code><span>Превращает строку в массив, <b>s</b> - разделитель</span></li>
+         <li><code>arr.join(s)</code><span>Превращает массив в строку, <b>s</b> - разделитель</span></li>
+         <li><code>delete arr[1]</code><span>Удаляет второй элемент</span></li>
+         <li><code>arr.splice(index, count, elem1...)</code><span>Удалить <b>count</b> элементов, начиная с <b>index</b>
+               и заменить на элементы <b>elem1...</b></span></li>
+         <li><code>arr.slice(begin, end)</code><span>Копировать часть массива с <b>begin</b> по <b>end</b> не
+               включая</span></li>
+         <li><code>arr.sort(fn)</code><span>Сортирует масссив, если не передать функцию сравнения, сортирует элементы
+               как строки</span></li>
+         <li><code>arr.reverse()</code><span>Меняет порядок элементов на обратный</span></li>
+         <li><code>arr.concat(item1...)</code><span>Создаёт новый массив, в который копируются элементы из <b>arr</b>, а
+               также <b>item1...</b></span></li>
+      </ul>
+      <h3>Методы перебора</h3>
+      <ul>
+         <li><code>arr.forEach</code></li>
+         <li><code>arr.map</code></li>
+         <li><code>arr.every/some</code></li>
+         <li><code>arr.filter</code></li>
+         <li><code>arr.reduce</code></li>
+      </ul>
+   </section>
+   <section>
+      <h2>Передача по ссылке или по значению. Spread оператор</h2>
+      <p>При присваивании значений примитивных типов данных, они создают новые переменные, а при работе с Объектами
+         создаются ссылки</p>
+      <span>Создаёт новый объект из arr и arr2, также можно создать новый объект, присоединив пустой объект
+         (Поерхностная копия)</span> <code>Object.assign({}, arr)</code>
+      <code>Object.assign(arr, arr2);</code><span>Создаёт новый объект из arr и arr2, также можно создать новый объект,
+         присоединив пустой объект</span> <code>Object.assign({}, arr)</code>
+      <span>Поверхностная копия массива</span>
+      <code>const newArr = oldArr.slice();</code>
+      <span>Поверхностная копия, используя Spread оператор, так же работает с объекатми (ES9)</span>
+      <code>const array = ['a', 'b'];</code>
+      <code>const array2 = [...array];</code>
+   </section>
+   <section>
+      <h2>Основы ООП, прототипно-ориентированное наследование</h2>
+      <p>Старый синтаксис:</p>
+      <span>joe наследует все свойстова soldier, которых у него нет</span>
+      <code><pre>const soldier = {
       health: 400,
       armor: 100,
       sayHello: function() {
@@ -158,152 +186,235 @@ const joe = {
 };
 
 joe.__proto__ = soldier;</pre></code>
-<p>Новый синтаксис:</p>
-<code><pre>
+      <p>Новый синтаксис:</p>
+      <code><pre>
 const joe = Object.create(soldier); <br> <span>Создаёт объект, сразу привязанный к прототипу</span>
 
 Object.setPrototypeOf(joe, soldier);<br> <span>Устанавливает связь</span>
 </pre>
 </code>
-</section>
-<section>
-   <h2>Динамическая типизация</h2>
-   <h3>To String</h3>
-   <ul>
-      <li>String(var)</li>
-      <li>Конкатенация со строкой</li>
-   </ul>
-   <h3>To Number</h3>
-   <ul>
-      <li>Number('str')</li>
-      <li>Унарный плюс (+'str')</li>
-      <li>parseInt()</li>
-   </ul>
-   <h3>To boolean</h3>
-   <ul>
-      <li>false: 0, '', null, undefined, NaN;</li>
-      <li>true: всё остальное</li>
-      <li>Boolean(var)</li>
-      <li>!!var</li>
-   </ul>
-</section>
-<section>
-   <h2>Получение элементов со страницы</h2>
-   <ul>
-      <li><p>Получаем 1 уникальный элемент</p><code>document.getElementById('id')</code></li>
-      <li><p>Получаем все элементы с данным html-тегом в html коллекцию</p><code>document.getElementsByTagName('tag')</code></li>
-      <li><p>Получаем все эелементы с данным css классом в html коллекцию</p><code>document.getElementsByClassName('class')</code></li>
-      <li><p>Получаем все эелементы с данным css селектором в node коллекцию <b>Доступен метод forEach</b></p><code>document.querySelectorAll('.class/#id/...')</code></li>
-      <li><p>Получаем первый элемент с заданным css селектором</p><code>document.querySelector('.class/#id/...')</code></li>
-   </ul>
-</section>
-<section>
-   <h2>Действия с элементами на странице</h2>
-   <p>Задать инлайн стиль элементу (наибольший вес)</p>
-   <code>el.style.camelCaseCssProp = "value"</code>
-   <code>el.style.cssText = 'css-prop: value; css-prop: value; ...'</code>
-   <p>Создать элемент</p>
-   <code>document.createElement("tag")</code>
-   <p>Добавить класс</p>
-   <code>el.classList.add('class')</code>
-   <h3>Новые методы позиционирования элементов</h3>
-   <ul>
-      <li><p>Добавить элемент в начало родителя</p><code>parent.prepend(el)</code></li>
-      <li><p>Добавить элемент в конец родителя</p><code>parent.append(el)</code></li>
-      <li><p>Добавить элемент перед другим элементом</p><code>el_a.before(el)</code></li>
-      <li><p>Добавить элемент после другого элемента</p><code></code>el_a.after(el)</li>
-      <li><p>Заменить один элемент другим</p><code>el_a.replaceWith(el)</code></li>
-      <li><p>Удалить элемент</p><code>el.remove()</code></li>
-   </ul>
-   <p>Вставляет HTML код в элемент</p>
-   <code>el.innerHTML = "html код"</code>
-   <p>Вставляет текст в элемент (безопасно)</p>
-   <code>el.textContent = 'text'</code>
-   <p>Вставляет HTML код на выбронную позицию относительно элемента</p>
-   <code>el.insertAdjacentHTML('beforeend/beforebegin/afterend/afterbegin', 'html код')</code>
-   <ul>
-      <li>afterbegin - в начале элемента</li>
-      <li>beforeend - в конце элемента</li>
-      <li>beforebegin - перед элементом</li>
-      <li>afterend - после элемента</li>
-   </ul>
-</section>
-<section>
-   <h2>События</h2>
-   <a href="https://developer.mozilla.org/ru/docs/Web/API/EventTarget/addEventListener">addEventListener</a>
-   <h3>Способы использовать события:</h3>
-   <ul>
-      <li><p>Присваивать прямо в html коде (не используется в проектах)</p><code>...onclick="alert('Click')"</code></li>
-      <li><p>Обрабатывать событие в скрипте (не используется в проектах (обработчики 1го элемента могут пересекаться))</p><code>el.onclick = function() {alert('Click')}</code></li>
-      <li><p>Правильный способ - обрабатывать событие, используя/снимая прослушку</p><code>el.addEventListener('click'), function, {once: true} }</code><p>
-         Чтобы вызывать функцию с аргментом в прослушке, можно обернуть её в другую функцию( () => {func(props)})
-      </p></li>
-   </ul>
-   <p>Всплытие события происходит с самого дальнего ребёнка</p>
-</section>
-<section>
-   <h2>Прогулка по DOM дереву</h2>
-   <p>Элемент - некоторые узлы являются элементами (div, ... )</p>
-   <p>Узел - все сущности в дереве - узлы (переносы строк, текст)</p>
-   <h3>Способы получать элементы DOM</h3>
-   <p>структуры с Element и cheldren - получают именно элементы, остальные - все узлы</p>
-   <ul>
-      <li><p></p><code>document.documentElement</code></li>
-      <li><p></p><code>document.body.childNodes</code></li>
-      <li><p></p><code>document.body.children</code></li>
-      <li><p></p><code>document.body.firstChild</code></li>
-      <li><p></p><code>document.body.firstElementChild</code></li>
-      <li><p></p><code>document.body.lastChild</code></li>
-      <li><p></p><code>document.body.lastElementChild</code></li>
-      <li><p></p><code>document.querySelector('#current').parentNode</code></li>
-      <li><p></p><code>document.querySelector('#current').parentElement</code></li>
-      <li><p></p><code>document.querySelector('[data-current="3"]').nextElementSibling</code></li>
-      <li><p></p><code>document.querySelector('[data-current="3"]').nextSibling</code></li>
-      <li><p></p><code>document.querySelector('[data-current="3"]').previousSibling</code></li>
-      <li><p></p><code>document.querySelector('[data-current="3"]').previousElementSibling</code></li>
-   </ul>
-   <p>Пример использования <span>Перебрать html коллекцию и убрать из неё текстовые узлы</span></p>
-   <code><pre>for (let node of document.body.childNodes) {
+   </section>
+   <section>
+      <h2>Динамическая типизация</h2>
+      <h3>To String</h3>
+      <ul>
+         <li>String(var)</li>
+         <li>Конкатенация со строкой</li>
+      </ul>
+      <h3>To Number</h3>
+      <ul>
+         <li>Number('str')</li>
+         <li>Унарный плюс (+'str')</li>
+         <li>parseInt()</li>
+      </ul>
+      <h3>To boolean</h3>
+      <ul>
+         <li>false: 0, '', null, undefined, NaN;</li>
+         <li>true: всё остальное</li>
+         <li>Boolean(var)</li>
+         <li>!!var</li>
+      </ul>
+   </section>
+   <section>
+      <h2>Получение элементов со страницы</h2>
+      <ul>
+         <li>
+            <p>Получаем 1 уникальный элемент</p><code>document.getElementById('id')</code>
+         </li>
+         <li>
+            <p>Получаем все элементы с данным html-тегом в html коллекцию</p>
+            <code>document.getElementsByTagName('tag')</code>
+         </li>
+         <li>
+            <p>Получаем все эелементы с данным css классом в html коллекцию</p>
+            <code>document.getElementsByClassName('class')</code>
+         </li>
+         <li>
+            <p>Получаем все эелементы с данным css селектором в node коллекцию <b>Доступен метод forEach</b></p>
+            <code>document.querySelectorAll('.class/#id/...')</code>
+         </li>
+         <li>
+            <p>Получаем первый элемент с заданным css селектором</p>
+            <code>document.querySelector('.class/#id/...')</code>
+         </li>
+      </ul>
+   </section>
+   <section>
+      <h2>Действия с элементами на странице</h2>
+      <p>Задать инлайн стиль элементу (наибольший вес)</p>
+      <code>el.style.camelCaseCssProp = "value"</code>
+      <code>el.style.cssText = 'css-prop: value; css-prop: value; ...'</code>
+      <p>Создать элемент</p>
+      <code>document.createElement("tag")</code>
+      <p>Добавить класс</p>
+      <code>el.classList.add('class')</code>
+      <h3>Новые методы позиционирования элементов</h3>
+      <ul>
+         <li>
+            <p>Добавить элемент в начало родителя</p><code>parent.prepend(el)</code>
+         </li>
+         <li>
+            <p>Добавить элемент в конец родителя</p><code>parent.append(el)</code>
+         </li>
+         <li>
+            <p>Добавить элемент перед другим элементом</p><code>el_a.before(el)</code>
+         </li>
+         <li>
+            <p>Добавить элемент после другого элемента</p><code></code>el_a.after(el)
+         </li>
+         <li>
+            <p>Заменить один элемент другим</p><code>el_a.replaceWith(el)</code>
+         </li>
+         <li>
+            <p>Удалить элемент</p><code>el.remove()</code>
+         </li>
+      </ul>
+      <p>Вставляет HTML код в элемент</p>
+      <code>el.innerHTML = "html код"</code>
+      <p>Вставляет текст в элемент (безопасно)</p>
+      <code>el.textContent = 'text'</code>
+      <p>Вставляет HTML код на выбронную позицию относительно элемента</p>
+      <code>el.insertAdjacentHTML('beforeend/beforebegin/afterend/afterbegin', 'html код')</code>
+      <ul>
+         <li>afterbegin - в начале элемента</li>
+         <li>beforeend - в конце элемента</li>
+         <li>beforebegin - перед элементом</li>
+         <li>afterend - после элемента</li>
+      </ul>
+   </section>
+   <section>
+      <h2>События</h2>
+      <a href="https://developer.mozilla.org/ru/docs/Web/API/EventTarget/addEventListener">addEventListener</a>
+      <h3>Способы использовать события:</h3>
+      <ul>
+         <li>
+            <p>Присваивать прямо в html коде (не используется в проектах)</p><code>...onclick="alert('Click')"</code>
+         </li>
+         <li>
+            <p>Обрабатывать событие в скрипте (не используется в проектах (обработчики 1го элемента могут пересекаться))
+            </p><code>el.onclick = function() {alert('Click')}</code>
+         </li>
+         <li>
+            <p>Правильный способ - обрабатывать событие, используя/снимая прослушку</p>
+            <code>el.addEventListener('click'), function, {once: true} }</code>
+            <p>
+               Чтобы вызывать функцию с аргментом в прослушке, можно обернуть её в другую функцию( () => {func(props)})
+            </p>
+         </li>
+      </ul>
+      <p>Всплытие события происходит с самого дальнего ребёнка</p>
+   </section>
+   <section>
+      <h2>Прогулка по DOM дереву</h2>
+      <p>Элемент - некоторые узлы являются элементами (div, ... )</p>
+      <p>Узел - все сущности в дереве - узлы (переносы строк, текст)</p>
+      <h3>Способы получать элементы DOM</h3>
+      <p>структуры с Element и cheldren - получают именно элементы, остальные - все узлы</p>
+      <ul>
+         <li>
+            <p></p><code>document.documentElement</code>
+         </li>
+         <li>
+            <p></p><code>document.body.childNodes</code>
+         </li>
+         <li>
+            <p></p><code>document.body.children</code>
+         </li>
+         <li>
+            <p></p><code>document.body.firstChild</code>
+         </li>
+         <li>
+            <p></p><code>document.body.firstElementChild</code>
+         </li>
+         <li>
+            <p></p><code>document.body.lastChild</code>
+         </li>
+         <li>
+            <p></p><code>document.body.lastElementChild</code>
+         </li>
+         <li>
+            <p></p><code>document.querySelector('#current').parentNode</code>
+         </li>
+         <li>
+            <p></p><code>document.querySelector('#current').parentElement</code>
+         </li>
+         <li>
+            <p></p><code>document.querySelector('[data-current="3"]').nextElementSibling</code>
+         </li>
+         <li>
+            <p></p><code>document.querySelector('[data-current="3"]').nextSibling</code>
+         </li>
+         <li>
+            <p></p><code>document.querySelector('[data-current="3"]').previousSibling</code>
+         </li>
+         <li>
+            <p></p><code>document.querySelector('[data-current="3"]').previousElementSibling</code>
+         </li>
+      </ul>
+      <p>Пример использования <span>Перебрать html коллекцию и убрать из неё текстовые узлы</span></p>
+      <code><pre>for (let node of document.body.childNodes) {
       if (node.nodeName == "#text") {
          continue;
       }
       console.log(node);
    }</pre></code>
-</section>
-<section>
-   <h2>События на мобильных устройствах</h2>
-   <ul>
-      <li><p></p><code>touchstart</code></li>
-      <li><p></p><code>touchmove</code></li>
-      <li><p></p><code>touchend</code></li>
-      <li><p></p><code>touchenter</code></li>
-      <li><p></p><code>touchleave</code></li>
-      <li><p></p><code>touchcancel</code></li>
-   </ul>
-   <h3>Cвойства event</h3>
-   <ul>
-      <li><p>Количество одновременных касаний</p><code>touches</code></li>
-      <li><p>Количество одновременных касаний на определенном элементе</p><code>targetTouches</code></li>
-      <li><p>Список пальцев, учавствовавших в текущем событии</p><code>changedTouches</code></li>
-   </ul>
-   <a href="http://youon.ru/%D0%90%D0%BD%D0%B4%D1%80%D0%BE%D0%B8%D0%B4/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/touch-sobytiya-na-javascript-multitach-realizatsiya">Подробнее</a>
-   <a href="https://habr.com/ru/company/sibirix/blog/227175/">Ещё</a>
-</section>
-<section>
-   <h2>Async, defer</h2>
-   <p>async - такой скрипт загружается немедленно, независимо от остальных</p>
-   <code>script async src="script.js"</script></code>
-   <p>defer - такой скрипт можно подключать не только в конце, он дождется загрузки дом, потом сработает. если скриптов несколько, сработают в порядке очереди</p>
-   <code>script defer src="script.js"</script></code>
-</section>
-<section>
-   <h2>ClassList</h2>
-   <a href='https://developer.mozilla.org/ru/docs/Web/API/Element/classList'>Element.classList</a>
-   <a href='https://developer.mozilla.org/ru/docs/Web/API/Element/matches'>Element.matches()</a>
-   <a href='https://learn.javascript.ru/event-delegation'>Делегирование событий</a>
-   <a href='https://stasonmars.ru/javascript/kak-rabotaet-delegirovanie-sobityi-v-javascript/'>Делегирование событий</a>
-<p>Делегирование позволяет использовать лишь одну прослушку, что экономит ресурсы, так же оно правильно отрабатывает с динамически созданными элементами, так как прослушивается их родитель. Пример:</p>
-<code><pre>
+   </section>
+   <section>
+      <h2>События на мобильных устройствах</h2>
+      <ul>
+         <li>
+            <p></p><code>touchstart</code>
+         </li>
+         <li>
+            <p></p><code>touchmove</code>
+         </li>
+         <li>
+            <p></p><code>touchend</code>
+         </li>
+         <li>
+            <p></p><code>touchenter</code>
+         </li>
+         <li>
+            <p></p><code>touchleave</code>
+         </li>
+         <li>
+            <p></p><code>touchcancel</code>
+         </li>
+      </ul>
+      <h3>Cвойства event</h3>
+      <ul>
+         <li>
+            <p>Количество одновременных касаний</p><code>touches</code>
+         </li>
+         <li>
+            <p>Количество одновременных касаний на определенном элементе</p><code>targetTouches</code>
+         </li>
+         <li>
+            <p>Список пальцев, учавствовавших в текущем событии</p><code>changedTouches</code>
+         </li>
+      </ul>
+      <a
+         href="http://youon.ru/%D0%90%D0%BD%D0%B4%D1%80%D0%BE%D0%B8%D0%B4/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/touch-sobytiya-na-javascript-multitach-realizatsiya">Подробнее</a>
+      <a href="https://habr.com/ru/company/sibirix/blog/227175/">Ещё</a>
+   </section>
+   <section>
+      <h2>Async, defer</h2>
+      <p>async - такой скрипт загружается немедленно, независимо от остальных</p>
+      <code>script async src="script.js"</script></code>
+      <p>defer - такой скрипт можно подключать не только в конце, он дождется загрузки дом, потом сработает. если
+         скриптов несколько, сработают в порядке очереди</p>
+      <code>script defer src="script.js"</script></code>
+   </section>
+   <section>
+      <h2>ClassList</h2>
+      <a href='https://developer.mozilla.org/ru/docs/Web/API/Element/classList'>Element.classList</a>
+      <a href='https://developer.mozilla.org/ru/docs/Web/API/Element/matches'>Element.matches()</a>
+      <a href='https://learn.javascript.ru/event-delegation'>Делегирование событий</a>
+      <a href='https://stasonmars.ru/javascript/kak-rabotaet-delegirovanie-sobityi-v-javascript/'>Делегирование
+         событий</a>
+      <p>Делегирование позволяет использовать лишь одну прослушку, что экономит ресурсы, так же оно правильно
+         отрабатывает с динамически созданными элементами, так как прослушивается их родитель. Пример:</p>
+      <code><pre>
    wrapper = document.querySelector('.btn-block');
    wrapper.addEventListener('click', (e) => {
       if (e.target && e.target.matches('button.red')) {
@@ -311,74 +422,77 @@ Object.setPrototypeOf(joe, soldier);<br> <span>Устанавливает свя
       }
    });
 </pre></code>
-</section>
-<section>
-   <h2>ES6 особенности</h2>
-   <ul>
-      <li>В объявлении функции можно задавать параметр по умолчанию: <code>function fName(param = 0) {}</code></code></li>
-      <a href="https://alligator.io/js/object-property-shorthand-es6/">Сокращенная запись объектов</a>
-   </ul>
-</section>
-<section>
-   <h2>setTimeout, setInterval</h2>
-   <p>рекурсивный вызов setTimeout отрабатывает лучше, чем setInterval (setInterval не ждёт после выполнения функции) Пример:</p>
-   <code><pre>let id = setTimeout(function log() {
+   </section>
+   <section>
+      <h2>ES6 особенности</h2>
+      <ul>
+         <li>В объявлении функции можно задавать параметр по умолчанию: <code>function fName(param = 0) {}</code></code>
+         </li>
+         <a href="https://alligator.io/js/object-property-shorthand-es6/">Сокращенная запись объектов</a>
+      </ul>
+   </section>
+   <section>
+      <h2>setTimeout, setInterval</h2>
+      <p>рекурсивный вызов setTimeout отрабатывает лучше, чем setInterval (setInterval не ждёт после выполнения функции)
+         Пример:</p>
+      <code><pre>let id = setTimeout(function log() {
       console.log('recursion setTimeout');
       id = setTimeout(log, 500);
    }, 500);</pre></code>
-   <p>Пример использования setInterval и clearInterval</p>
-   <code><pre>const timeInterval = setInterval(function, 1000);
+      <p>Пример использования setInterval и clearInterval</p>
+      <code><pre>const timeInterval = setInterval(function, 1000);
       if (smth) {
          clearInterval(timeInterval);               
       }
    </pre></code>
-</section>
-<section>
-   <h2>Работа с датами</h2>
-   <a href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date'>Документация</a>
-   <a href='https://learn.javascript.ru/date'>Статья</a>
-   <p>Создание объекта с датой: <code>const date = new Date()</code><span>Создаётся текущая дата.</span> В скобки можно передать аргумент, допустим значение <code>input type="date"</code></p>
-</section>
-<section>
-   <h2>Параметры документа, окна и работа с ними</h2>
-   <img src="./img/metric-all.webp" />
-   <code>box-sizing: border-box;</code><span> Паддинги входят в длину/ширину элемента</span>
-   <h3>Метрика элементов</h3>
-   <ul>
-      <li>
-         <p>Получения значений js позиционирования</p>
-         <code>console.log(el.getBoundingClientRect().prop);</code>
-      </li>
-      <li>
-         <p>Получение уже просчитанных стилей</p>
-         <code><pre>
+   </section>
+   <section>
+      <h2>Работа с датами</h2>
+      <a href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date'>Документация</a>
+      <a href='https://learn.javascript.ru/date'>Статья</a>
+      <p>Создание объекта с датой: <code>const date = new Date()</code><span>Создаётся текущая дата.</span> В скобки
+         можно передать аргумент, допустим значение <code>input type="date"</code></p>
+   </section>
+   <section>
+      <h2>Параметры документа, окна и работа с ними</h2>
+      <img src="./img/metric-all.webp" />
+      <code>box-sizing: border-box;</code><span> Паддинги входят в длину/ширину элемента</span>
+      <h3>Метрика элементов</h3>
+      <ul>
+         <li>
+            <p>Получения значений js позиционирования</p>
+            <code>console.log(el.getBoundingClientRect().prop);</code>
+         </li>
+         <li>
+            <p>Получение уже просчитанных стилей</p>
+            <code><pre>
             const style = window.getComputedStyle(el,{псевдокласс});
             console.log(style.prop);
          </pre></code>
-      </li>
-   </ul>
-   <h3>Метрика документа и окна</h3>
-   <p>Пример:</p>
-   <code>console.log(document.documentElement.scrollTop)</code>
-   <code>window.scrollBy(x, y)</code>
-   <code>window.scrollTo(x, y)</code>
-</section>
-<section>
-   <h2>Функции конструкторы</h2>
-   <a href="https://learn.javascript.ru/constructor-new">Подробнее</a>
-</section>
-<section>
-   <h2>Контекст вызова. This</h2>
-   <a href='https://tproger.ru/translations/javascript-this-keyword/'>Подробнее</a>
-   <p>Особенности:</p>
-   <ul>
-      <li>Обычная функция: this = window, но если use strict - undefined</li>
-      <li>Контекст у методов объекта - сам объект</li>
-      <li>this в конструкторах и классах - это новый экземпляр объекта</li>
-      <li>Ручная привязка this: call, apply, bind</li>
-   </ul>
-   <p>Методы присвоения контекста -> функции, .call и .apply разлчаются синтаксисом передачи аргументов</p>
-   <code><pre>
+         </li>
+      </ul>
+      <h3>Метрика документа и окна</h3>
+      <p>Пример:</p>
+      <code>console.log(document.documentElement.scrollTop)</code>
+      <code>window.scrollBy(x, y)</code>
+      <code>window.scrollTo(x, y)</code>
+   </section>
+   <section>
+      <h2>Функции конструкторы</h2>
+      <a href="https://learn.javascript.ru/constructor-new">Подробнее</a>
+   </section>
+   <section>
+      <h2>Контекст вызова. This</h2>
+      <a href='https://tproger.ru/translations/javascript-this-keyword/'>Подробнее</a>
+      <p>Особенности:</p>
+      <ul>
+         <li>Обычная функция: this = window, но если use strict - undefined</li>
+         <li>Контекст у методов объекта - сам объект</li>
+         <li>this в конструкторах и классах - это новый экземпляр объекта</li>
+         <li>Ручная привязка this: call, apply, bind</li>
+      </ul>
+      <p>Методы присвоения контекста -> функции, .call и .apply разлчаются синтаксисом передачи аргументов</p>
+      <code><pre>
    function sayName(surname) {
       console.log(this);
       console.log(this.name + surname);
@@ -391,8 +505,8 @@ Object.setPrototypeOf(joe, soldier);<br> <span>Устанавливает свя
    sayName.<b>call</b>(user, 'Constantine');
    sayName.<b>apply</b>(user, ['Wick']);
 </pre></code>
-<p>.bind создёт новую функцию</p>
-<code><pre>
+      <p>.bind создёт новую функцию</p>
+      <code><pre>
 function count(num) {
    return this*num;
 }
@@ -402,16 +516,16 @@ const double = count<b>.bind(2)</b>;
 console.log(double(223));
 console.log(double(22322));
 </pre></code>
-</section>
-<section>
-   <h2>ES6 Классы</h2>
-   <a href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Classes'>Документация по классам</a>
-   <a href='http://jsraccoon.ru/es6-classes'>Статья по классам</a>
-   <p>Класс именуется с большой буквы, содержит <b>constructor</b>, в который передаются свойства. 
-      Если мы хотим переиспользовать класс в другом классе нужно указать <b>extends</b>, чтобы использовать 
-      свойства этого класса, в constructor нужно указать <b>super(props) - он идёт первым</b>
-   </p>
-   <code><pre>
+   </section>
+   <section>
+      <h2>ES6 Классы</h2>
+      <a href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Classes'>Документация по классам</a>
+      <a href='http://jsraccoon.ru/es6-classes'>Статья по классам</a>
+      <p>Класс именуется с большой буквы, содержит <b>constructor</b>, в который передаются свойства.
+         Если мы хотим переиспользовать класс в другом классе нужно указать <b>extends</b>, чтобы использовать
+         свойства этого класса, в constructor нужно указать <b>super(props) - он идёт первым</b>
+      </p>
+      <code><pre>
       class Rectangle {
          <b>constructor</b>(h, w) {
             this.height = h;
@@ -442,108 +556,129 @@ console.log(double(22322));
       shape.showMyProps();
       console.log(shape.calcArea());
    </pre></code>
-</section>
-<section>
-   <h2>Rest оператор и параметры по умолчанию (ES6)</h2>
-   <a href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Rest_parameters'>Документация</a>
-   <a href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Default_parameters'>Параметры по умолчанию</a>
-   <p>Оператор ...rest <span>Называть можно как угодно</span></p>
-   <code><pre>
+   </section>
+   <section>
+      <h2>Rest оператор и параметры по умолчанию (ES6)</h2>
+      <a
+         href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Rest_parameters'>Документация</a>
+      <a href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Default_parameters'>Параметры по
+         умолчанию</a>
+      <p>Оператор ...rest <span>Называть можно как угодно</span></p>
+      <code><pre>
       const log = function(a,b, <b>...rest</b>) {
          console.log();
       }
    </pre></code>
-   <p>Значени по умолчанию можно передавать прямо в параметрах объявления функции</p>
-   <code><pre>
+      <p>Значени по умолчанию можно передавать прямо в параметрах объявления функции</p>
+      <code><pre>
       function calcOrDouble(number, basis <b>= 2</b>) {
          console.log(number * basis);
       }
    </pre></code>
-</section>
-<section>
-   <h2>JSON формат передачи данных</h2>
-   <a href="https://ru.wikipedia.org/wiki/JSON">Подробнее</a>
-   <a href="https://ru.wikipedia.org/wiki/HTTP">HTTP пртокол передачи данных</a>
-   <a href="https://medium.com/@stasonmars/%D0%BA%D0%BE%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2-%D0%B2-javascript-d25c261a7aff">Копирование объектов в JS</a>
-   <ul>
-      <li>JSON.stringify(obj)</li>
-      <li>JSON.parse(JSON)</li>
-   </ul>
-   <p>Глубинное клонирование объекта:</p>
-   <code>const clone = JSON.parse(JSON.stringify(obj));</code>
-</section>
-<section>
-   <h2>AJAX и общение с сервером</h2>
-   <h3>XMLHttpRequest</h3>
-   <p><a href="https://developer.mozilla.org/ru/docs/Web/API/XMLHttpRequest">XMLHttpRequest</a>
-   <a href="https://developer.mozilla.org/ru/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest">Использование XMLHttpRequest</a>
-   <a href="https://developer.mozilla.org/ru/docs/Web/API/XMLHttpRequest/readyState">XMLHttpRequest.readyState</a></p>
-   <h3>FormData</h3>
-   <p><a href="https://developer.mozilla.org/ru/docs/Web/API/FormData/Using_FormData_Objects">Использование Объектов FormData</a>
-   <a href="https://ilikekillnerds.com/2017/09/convert-formdata-json-object/">Из FormData в JSON</a></p>
-   <h3>HTTP</h3>
-   <p><a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B8_HTTP">Заголовки HTTP</a>
-   <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BA%D0%BE%D0%B4%D0%BE%D0%B2_%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D1%8F_HTTP">Список кодов состояния HTTP</a></p>
-</section>
-<section>
-   <h2>
-      Promise ES6
-   </h2>
-   <a href="https://learn.javascript.ru/promise-basics">Подробнее</a>
-   <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise">Ещё</a>
-   <p><code>const req = new Promise((resolve, reject) => {async code})</code></p>
-   <ul>
-      <li><code>.then</code><p>Действия при положительном исходе</p></li>
-      <li><code>.catch</code><p>Действия при отрицательном</p></li>
-      <li><code>.finally</code><p>Действия при любом исходе (допустим очистка формы)</p></li>
-   </ul>
-   <p>Методы Promise</p>
-   <ul>
-      <li>
-         <p>All выполняет действие, когда все промисы завершены</p>
-         <code>Promise.all([func1, func2, ...]).then(() => {func})</code>
-      </li>
-      <li>
-         <p>Race выполняет действие, когда один из промисов (первый) завершён</p>
-         <code>Promise.race([func1, func2, ...]).then(() => {func})</code>
-      </li>
-   </ul>
-</section>
-<section>
-   <h2>Fetch API</h2>
-   <a href="https://developer.mozilla.org/ru/docs/Web/API/Fetch_API/Using_Fetch">Подробнее</a>
-   <p>Отлавливание ошибок:</p>
-   <code><pre>
+   </section>
+   <section>
+      <h2>JSON формат передачи данных</h2>
+      <a href="https://ru.wikipedia.org/wiki/JSON">Подробнее</a>
+      <a href="https://ru.wikipedia.org/wiki/HTTP">HTTP пртокол передачи данных</a>
+      <a
+         href="https://medium.com/@stasonmars/%D0%BA%D0%BE%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2-%D0%B2-javascript-d25c261a7aff">Копирование
+         объектов в JS</a>
+      <ul>
+         <li>JSON.stringify(obj)</li>
+         <li>JSON.parse(JSON)</li>
+      </ul>
+      <p>Глубинное клонирование объекта:</p>
+      <code>const clone = JSON.parse(JSON.stringify(obj));</code>
+   </section>
+   <section>
+      <h2>AJAX и общение с сервером</h2>
+      <h3>XMLHttpRequest</h3>
+      <p><a href="https://developer.mozilla.org/ru/docs/Web/API/XMLHttpRequest">XMLHttpRequest</a>
+         <a href="https://developer.mozilla.org/ru/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest">Использование
+            XMLHttpRequest</a>
+         <a href="https://developer.mozilla.org/ru/docs/Web/API/XMLHttpRequest/readyState">XMLHttpRequest.readyState</a>
+      </p>
+      <h3>FormData</h3>
+      <p><a href="https://developer.mozilla.org/ru/docs/Web/API/FormData/Using_FormData_Objects">Использование Объектов
+            FormData</a>
+         <a href="https://ilikekillnerds.com/2017/09/convert-formdata-json-object/">Из FormData в JSON</a>
+      </p>
+      <h3>HTTP</h3>
+      <p><a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B8_HTTP">Заголовки
+            HTTP</a>
+         <a
+            href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BA%D0%BE%D0%B4%D0%BE%D0%B2_%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D1%8F_HTTP">Список
+            кодов состояния HTTP</a>
+      </p>
+   </section>
+   <section>
+      <h2>
+         Promise ES6
+      </h2>
+      <a href="https://learn.javascript.ru/promise-basics">Подробнее</a>
+      <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise">Ещё</a>
+      <p><code>const req = new Promise((resolve, reject) => {async code})</code></p>
+      <ul>
+         <li><code>.then</code>
+            <p>Действия при положительном исходе</p>
+         </li>
+         <li><code>.catch</code>
+            <p>Действия при отрицательном</p>
+         </li>
+         <li><code>.finally</code>
+            <p>Действия при любом исходе (допустим очистка формы)</p>
+         </li>
+      </ul>
+      <p>Методы Promise</p>
+      <ul>
+         <li>
+            <p>All выполняет действие, когда все промисы завершены</p>
+            <code>Promise.all([func1, func2, ...]).then(() => {func})</code>
+         </li>
+         <li>
+            <p>Race выполняет действие, когда один из промисов (первый) завершён</p>
+            <code>Promise.race([func1, func2, ...]).then(() => {func})</code>
+         </li>
+      </ul>
+   </section>
+   <section>
+      <h2>Fetch API</h2>
+      <a href="https://developer.mozilla.org/ru/docs/Web/API/Fetch_API/Using_Fetch">Подробнее</a>
+      <p>Отлавливание ошибок:</p>
+      <code><pre>
       if (!result.ok) {
          throw new Error(`Couldt fetch ${url}, status: ${result.status}`);
       }
    </pre></code>
-</section>
-<section>
-   <h2>Методы перебора массивов</h2>
-   <a href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/map'>map</a>
-   <a href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/filter'>filter</a>
-   <a href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce'>reduce</a>
-   <a href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/entries'>Object.entries()</a>
-   <p>Переборы every/some возвращают true/false если каждый или хотя бы один элемент массива подходит заданному условию соответственно</p>
-   <p>Reduce простым языком:</p>
-   <code><pre>
+   </section>
+   <section>
+      <h2>Методы перебора массивов</h2>
+      <a href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/map'>map</a>
+      <a href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/filter'>filter</a>
+      <a href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce'>reduce</a>
+      <a
+         href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/entries'>Object.entries()</a>
+      <p>Переборы every/some возвращают true/false если каждый или хотя бы один элемент массива подходит заданному
+         условию соответственно</p>
+      <p>Reduce простым языком:</p>
+      <code><pre>
       let arr = [1, 6, 9, 2];
       arr.reduce((sum, current) => sum + current, [startValue])
    </pre></code>
-</section>
-<section>
-   <h2>npm пакеты</h2>
-   <p>Флаги:</p>
-   <ul>
-      <li>-g или --global - установить глобально</li>
-      <li>-D или --save--dev - пакет для разработки</li>
-   </ul>
-</section>
-<section>
-   <h2>Async/Await ES8</h2>
-   <p>Пример использования <span>в функции, которая использует асинхронный код (промисы) позволяет дождаться выполнения кода</span> :</p>
-<code><pre>      
+   </section>
+   <section>
+      <h2>npm пакеты</h2>
+      <p>Флаги:</p>
+      <ul>
+         <li>-g или --global - установить глобально</li>
+         <li>-D или --save--dev - пакет для разработки</li>
+      </ul>
+   </section>
+   <section>
+      <h2>Async/Await ES8</h2>
+      <p>Пример использования <span>в функции, которая использует асинхронный код (промисы) позволяет дождаться
+            выполнения кода</span> :</p>
+      <code><pre>      
    const postData = <b>async</b> (url, data) => { // объявление асинхронной функции
    const result = <b>await</b> fetch(url, { // дождаться, пока выполнится POST запрос
       method: 'POST',
@@ -555,32 +690,32 @@ console.log(double(22322));
    return <b>await</b> result.json(); // Дождаться пока ответ конвертируется в JS объект
 };
 </pre></code>
-</section>
-<section>
-   <h2>LocalStorage</h2>
-   <a href="https://tproger.ru/articles/localstorage/">LocalStorage на пальцах</a>
-   <a href="http://dev-test.nemikor.com/web-storage/support-test/">Проверить вместимость хранилища</a>
-   <ul>
-      <li>
-         <p>Записать ключ-знаение</p><code>localStorage.setItem('key', 'value');</code>
-      </li>
-      <li>
-         <p>Получить знаение по ключу</p><code>localStorage.getItem('key');</code>
-      </li>
-      <li>
-         <p>Удалить значение по ключу</p><code>localStorage.removeItem('key');</code>
-      </li>
-      <li>
-         <p>Очистить LocalStorage полностью</p><code>localStorage.clear();</code>
-      </li>
-   </ul>
-</section>
-<section>
-   <h2>Регулярные выражения</h2>
-   <a href="https://regex101.com/">Конструктор</a>
-   <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp">Документаия</a>
-   <a href="https://learn.javascript.ru/regular-expressions">Ещё</a>
-   <code>
+   </section>
+   <section>
+      <h2>LocalStorage</h2>
+      <a href="https://tproger.ru/articles/localstorage/">LocalStorage на пальцах</a>
+      <a href="http://dev-test.nemikor.com/web-storage/support-test/">Проверить вместимость хранилища</a>
+      <ul>
+         <li>
+            <p>Записать ключ-знаение</p><code>localStorage.setItem('key', 'value');</code>
+         </li>
+         <li>
+            <p>Получить знаение по ключу</p><code>localStorage.getItem('key');</code>
+         </li>
+         <li>
+            <p>Удалить значение по ключу</p><code>localStorage.removeItem('key');</code>
+         </li>
+         <li>
+            <p>Очистить LocalStorage полностью</p><code>localStorage.clear();</code>
+         </li>
+      </ul>
+   </section>
+   <section>
+      <h2>Регулярные выражения</h2>
+      <a href="https://regex101.com/">Конструктор</a>
+      <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp">Документаия</a>
+      <a href="https://learn.javascript.ru/regular-expressions">Ещё</a>
+      <code>
       const reg = /regular_expression/flags;
       <p>flags:</p>
       <ul>
@@ -589,32 +724,32 @@ console.log(double(22322));
          <li>m - многострочный режим</li>
       </ul>
    </code>
-   <p>Метод search игнорирует флаг g, а метод match возвращает массив</p>
-   <p>Пример:</p>
-   <ul>
-      <li>/./g - Точка - означает все символы, g - все вхождения</li>
-      <li>/\./g - \ - экранирование спецсимвола '.', g - все вхождения</li>
-   </ul>
-   <p>Классы:</p>
-   <ul>
-      <li>\d - все цифры</li>
-      <li>\w - все буквы</li>
-      <li>\s - все пробелы</li>
-   </ul>
-   <code>
+      <p>Метод search игнорирует флаг g, а метод match возвращает массив</p>
+      <p>Пример:</p>
+      <ul>
+         <li>/./g - Точка - означает все символы, g - все вхождения</li>
+         <li>/\./g - \ - экранирование спецсимвола '.', g - все вхождения</li>
+      </ul>
+      <p>Классы:</p>
+      <ul>
+         <li>\d - все цифры</li>
+         <li>\w - все буквы</li>
+         <li>\s - все пробелы</li>
+      </ul>
+      <code>
       const str = 'my name is R2D2';
       console.log(str.match(/\w\d\w\d/i)); - R2D2
    </code>
-   <p>Обратные классы:</p>
-   <ul>
-      <li>\D - все не цифры</li>
-      <li>\W - все не буквы</li>
-   </ul>
-</section>
-<section>
-   <h2>Геттеры и сеттеры (свойства объектов)</h2>
-   <a href="https://learn.javascript.ru/property-accessors">Подробнее</a>
-   <code>
+      <p>Обратные классы:</p>
+      <ul>
+         <li>\D - все не цифры</li>
+         <li>\W - все не буквы</li>
+      </ul>
+   </section>
+   <section>
+      <h2>Геттеры и сеттеры (свойства объектов)</h2>
+      <a href="https://learn.javascript.ru/property-accessors">Подробнее</a>
+      <code>
       <pre>
          const persone = {
             name: 'Ivan',
@@ -634,14 +769,19 @@ console.log(double(22322));
          console.log(persone.age); //819
       </pre>
    </code>
-</section>
-<section>
-   <h2>Инкапсуляция</h2>
-   <a href="http://www.codenet.ru/progr/cpp/ipn.php">Инкапсуляция, полиморфизм, наследование</a>
-   <a href="https://medium.com/devschacht/javascripts-new-private-class-fields-c60daffe361b">Новые #приватные поля классов в JavaScript</a>
-   <p>Для защиты данных (переменных и пр.) извне в функциях достаточно использовать объявление переменной внутри её самой. В классах можно использовать синтаксис #variable = 'smth', такие переменные заданные через решетку лишены доступа извне. Для изменения вышеописанных переменных в функциях и классах используют геттеры и сеттеры (get, set). Также по договоренности в классах переменные, которые нельзя трогать извне (только гет и сет) называют через лодаш (this._var), но это лишь для зрительного восприятия.</p>
-   <p>Пример</p>
-   <code><pre>
+   </section>
+   <section>
+      <h2>Инкапсуляция</h2>
+      <a href="http://www.codenet.ru/progr/cpp/ipn.php">Инкапсуляция, полиморфизм, наследование</a>
+      <a href="https://medium.com/devschacht/javascripts-new-private-class-fields-c60daffe361b">Новые #приватные поля
+         классов в JavaScript</a>
+      <p>Для защиты данных (переменных и пр.) извне в функциях достаточно использовать объявление переменной внутри её
+         самой. В классах можно использовать синтаксис #variable = 'smth', такие переменные заданные через решетку
+         лишены доступа извне. Для изменения вышеописанных переменных в функциях и классах используют геттеры и сеттеры
+         (get, set). Также по договоренности в классах переменные, которые нельзя трогать извне (только гет и сет)
+         называют через лодаш (this._var), но это лишь для зрительного восприятия.</p>
+      <p>Пример</p>
+      <code><pre>
       class User {
          constructor(name, age) {
             this.name = name;
@@ -668,44 +808,45 @@ console.log(double(22322));
       Ivan.surname = 'ggt'
       Ivan.say(); //Имя: Ivan Durak, возраст: 33
    </pre></code>
-</section>
-<section>
-   <h2>Паттерны программирования и проектирования</h2>
-   <ul>
-      <li><a href="https://habr.com/ru/company/ruvds/blog/419997/">Модуль</a></li>
-      <li><a href="https://refactoring.guru/ru/design-patterns/facade">Фасад</a></li>
-   </ul>
-</section>
-<section>
-   <h2>Webpack. Собираем наш проект</h2>
-   <ul>
-      <li>Модули CommonJS <a href="http://largescalejs.ru/commonjs-modules/">Подробнее</a>
-         <p>В экспортном js файле: <code>module.exports = myFunction;</code></p>
-         <p>В файле, где экспортируем: <code>const myModule = require('./pathToExportFile');</code></p>
+   </section>
+   <section>
+      <h2>Паттерны программирования и проектирования</h2>
+      <ul>
+         <li><a href="https://habr.com/ru/company/ruvds/blog/419997/">Модуль</a></li>
+         <li><a href="https://refactoring.guru/ru/design-patterns/facade">Фасад</a></li>
+      </ul>
+   </section>
+   <section>
+      <h2>Webpack. Собираем наш проект</h2>
+      <ul>
+         <li>Модули CommonJS <a href="http://largescalejs.ru/commonjs-modules/">Подробнее</a>
+            <p>В экспортном js файле: <code>module.exports = myFunction;</code></p>
+            <p>В файле, где экспортируем: <code>const myModule = require('./pathToExportFile');</code></p>
 
-      </li>
-      <li>Установка Webpack <a href="https://webpack.js.org/guides/getting-started/">Подробнее</a></li>
-      <li>Визуальная инструкция <a href="https://webpack.js.org/">Подробнее</a></li>
-      <li>Режимы работы webpack <a href="https://webpack.js.org/configuration/mode/">Подробнее</a></li>
-      <li>Виды Dvtool <a href="https://webpack.js.org/configuration/devtool/">Подробнее</a></li>
-      <li>Модули Webpack <a href="https://webpack.js.org/concepts/modules/">Подробнее</a></li>
-   </ul>
-</section>
-<section>
-   <h2>ES6 Modules</h2>
-   <ul>
-      <li>export function or var or class</li>
-      <li>export default function or var or class</li>
-      <li>import {smth as newName} from './path'</li>
-      <li>import * as data from './path'</li>
-      <li>export default function or var or class <p>Экспорт по-умолчанию (default) может быть только один</p></li>
-      <li>import smth from './path'</li>
-   </ul>
-</section>
-<section>
-   <h2>Try...Catch. Ошибки. Как избежать “поломки” своего кода</h2>
-   <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/try...catch">try...catch</a>
-   <code><pre>
+         </li>
+         <li>Установка Webpack <a href="https://webpack.js.org/guides/getting-started/">Подробнее</a></li>
+         <li>Визуальная инструкция <a href="https://webpack.js.org/">Подробнее</a></li>
+         <li>Режимы работы webpack <a href="https://webpack.js.org/configuration/mode/">Подробнее</a></li>
+         <li>Виды Dvtool <a href="https://webpack.js.org/configuration/devtool/">Подробнее</a></li>
+         <li>Модули Webpack <a href="https://webpack.js.org/concepts/modules/">Подробнее</a></li>
+      </ul>
+   </section>
+   <section>
+      <h2>ES6 Modules</h2>
+      <ul>
+         <li>export function or var or class</li>
+         <li>export default function or var or class</li>
+         <li>import {smth as newName} from './path'</li>
+         <li>import * as data from './path'</li>
+         <li>export default function or var or class <p>Экспорт по-умолчанию (default) может быть только один</p>
+         </li>
+         <li>import smth from './path'</li>
+      </ul>
+   </section>
+   <section>
+      <h2>Try...Catch. Ошибки. Как избежать “поломки” своего кода</h2>
+      <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/try...catch">try...catch</a>
+      <code><pre>
       try {
          console.log('ok');
          console.log(tt); //ошибка
@@ -717,45 +858,84 @@ console.log(double(22322));
       }
       console.log('script works ok'); //выполнится
    </pre></code>
-</section>
-<section>
-   <h2>Как превратить код ES6+ в старый формат ES5. Babel, Core.js и полифиллы</h2>
-   <ul>
-      <li>Babel <a href="https://babeljs.io/">Подробнее</a></li>
-      <li>Проверка браузеров<a href="https://browserl.ist/">Подробнее</a></li>
-      <li>Core.js<a href="https://github.com/zloirock/core-js">github</a></li>
-   </ul>
-</section>
-<section>
-   <h2>Фрэймфорки</h2>
-   <ul>
-      <li>Angular:
-         <ul>
-            <li>node.js</li>
-            <li>TypeScrypt</li>
-            <li>WebPack</li>
-            <li>MVC pattern</li>
-            <li><a href="https://angular.io/">Angular</a></li>
-         </ul>
-      </li>
-      <li>React
-         <ul>
-            <li>node.js</li>
-            <li>JSX</li>
-            <li>Babel</li>
-            <li><a href="https://ru.reactjs.org/">React</a></li>
-         </ul>
-      </li>
-      <li>
-         Vue.js
-         <ul>
-            <li>WebPack</li>
-            <li><a href="https://vuejs.org/">Vue</a></li>
-            <li>node.js</li>
-         </ul>
-      </li>
-   </ul>
-</section>
+   </section>
+   <section>
+      <h2>Как превратить код ES6+ в старый формат ES5. Babel, Core.js и полифиллы</h2>
+      <ul>
+         <li>Babel <a href="https://babeljs.io/">Подробнее</a></li>
+         <li>Проверка браузеров<a href="https://browserl.ist/">Подробнее</a></li>
+         <li>Core.js<a href="https://github.com/zloirock/core-js">github</a></li>
+      </ul>
+   </section>
+   <section>
+      <h2>Фрэймфорки</h2>
+      <ul>
+         <li>Angular:
+            <ul>
+               <li>node.js</li>
+               <li>TypeScrypt</li>
+               <li>WebPack</li>
+               <li>MVC pattern</li>
+               <li><a href="https://angular.io/">Angular</a></li>
+            </ul>
+         </li>
+         <li>React
+            <ul>
+               <li>node.js</li>
+               <li>JSX</li>
+               <li>Babel</li>
+               <li><a href="https://ru.reactjs.org/">React</a></li>
+            </ul>
+         </li>
+         <li>
+            Vue.js
+            <ul>
+               <li>WebPack</li>
+               <li><a href="https://vuejs.org/">Vue</a></li>
+               <li>node.js</li>
+            </ul>
+         </li>
+      </ul>
+   </section>
+   <section>
+      <h2>Функции-генераторы</h2>
+      <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/function*">Документаия</a>
+      <code><pre>
+         function* funcName() {
+            yield 'S';
+            yield 'U';
+            yield 'N';
+         }
+         
+         const str = funcName();
+         
+         console.log(str.next().value);
+         
+         function* count(n) {
+            for (let i = 0; i < n; i++) {
+               yield i;
+            }
+         }
+         
+         for (let k of count(7)) {
+            console.log(k);
+         }
+      </pre></code>
+   </section>
+   <section>
+      <h2>JS анимации, requestAnimationFrame</h2>
+      <a href="https://html5.by/blog/what-is-requestanimationframe/">Простыми словами</a>
+      <a href="https://learn.javascript.ru/js-animation#funktsii-raschyota-vremeni">JavaScript-анимации</a>
+      <a href="https://developer.mozilla.org/ru/docs/Web/API/window/requestAnimationFrame">Документация</a>
+      <a href="https://html5book.ru/css3-animation/">CSS3 анимации</a>
+   </section>
+   <section>
+      <h2>EventLoop</h2>
+      <a
+         href="http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D">Подробнее</a>
+      <p>При установке времени в SetTimeout на 0ms (или 1, 2, 3) JavaScript автоматически подставит значение 4, для
+         совместимости</p>
+   </section>
 </main>
       <footer class="footer">
    <div class="footer__container">

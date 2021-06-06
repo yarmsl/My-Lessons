@@ -557,7 +557,7 @@
 //          name: 'TV',
 //          price: 3234,
 //       };
-      
+
 //       resolve(product);
 
 //    }, 2000);
@@ -728,3 +728,23 @@
 // //выполняется в любом случае
 // }
 // console.log('script works ok'); //выполнится
+
+// function* funcName() {
+//    yield 'S';
+//    yield 'U';
+//    yield 'N';
+// }
+
+// const str = funcName();
+
+// console.log(str.next().value);
+
+// function* count(n) {
+//    for (let i = 0; i < n; i++) {
+//       yield i;
+//    }
+// }
+
+// for (let k of count(7)) {
+//    console.log(k);
+// }
