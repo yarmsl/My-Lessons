@@ -1,5 +1,4 @@
 <main class="main">
-
    <section>
       <h2>GIT</h2>
       <p>мощная и сложная распределенная система контроля версий.</p>
@@ -912,5 +911,33 @@ console.log(double(22322));
          href="http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D">Подробнее</a>
       <p>При установке времени в SetTimeout на 0ms (или 1, 2, 3) JavaScript автоматически подставит значение 4, для
          совместимости</p>
+   </section>
+   <section>
+      <h2>Особенности ReactJS</h2>
+      <code><pre>
+         React.Fragment, Fragment и <> - создают пустую ноду
+      </pre></code>
+      <p>Чтобы создать компонент, в который можно оборачивать другие компоненты нужно в пропсы передать children</p>
+   </section>
+   <section>
+      <h2>NextJS</h2>
+      <h3>Роутинг</h3>
+      <p>Роутинг создаётся через папку pages <span>зарезервированное слово Next.JS</span>s, динамические страницы
+         следует называть через квадратные скобки
+         [name_id].js <span>Для работы с такими страницами используется хук useRouter().</span>
+         <code><pre>import { useRouter } from 'next/router'</pre></code>
+      </p>
+      <p>Такие методы роутинга (через именование папок и файлов js) работает из коробки, но это не динамическое создание
+         страниц</p>
+      <p>Для динамической отрисовки следует использовать
+         <code>import Link from 'next/link';</code>
+         который заменяет обычные гиперссылки <code>a</code>
+         или
+         <code>import Router from 'next/router';</code>
+         <code>Router.push('/route')</code>
+      </p>
+      <h3>SEO+Meta</h3>
+      <code>import Head from 'next/head';</code>
+      <p>можно использовать на любой странице для отрисовки тайтлов и прочей мета информации</p>
    </section>
 </main>
