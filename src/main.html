@@ -932,6 +932,8 @@ console.log(double(22322));
       <p>Для динамической отрисовки следует использовать
          <code>import Link from 'next/link';</code>
          который заменяет обычные гиперссылки <code>a</code>
+         <b>В случае динамически создаваемых страниц:</b>
+         <code><pre>использовать атрибуты href и as для Link, в href передавать шаблон ссылки с квадратными скобками, в as динамическую ссылку</pre></code>
          или
          <code>import Router from 'next/router';</code>
          <code>Router.push('/route')</code>
@@ -939,5 +941,7 @@ console.log(double(22322));
       <h3>SEO+Meta</h3>
       <code>import Head from 'next/head';</code>
       <p>можно использовать на любой странице для отрисовки тайтлов и прочей мета информации</p>
+      <h3>getInitialProps</h3>
+      <a href="https://nextjs.org/docs/api-reference/data-fetching/getInitialProps#context-object">Context(ctx)</a>
    </section>
 </main>
