@@ -918,6 +918,14 @@ console.log(double(22322));
          React.Fragment, Fragment и <> - создают пустую ноду
       </pre></code>
       <p>Чтобы создать компонент, в который можно оборачивать другие компоненты нужно в пропсы передать children</p>
+		<h3>useState</h3>
+		<p>В хуке useState стэйт можно изменять вызвав функию по предыдущему состоянию <code>setState(prev => console.log(prev))</code></p>
+		<p>Чтобы оптимизировать производительность в initState нужно передавать не функцию, а коллбэк
+			<code>
+				const someFunc = () => something <br>
+				const [state,setState] = useState(() => someFunc())
+			</code>
+		</p>
    </section>
    <section>
       <h2>NextJS</h2>
